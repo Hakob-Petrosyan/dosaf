@@ -1,0 +1,676 @@
+@media (hover: hover) {
+    button {
+        cursor: pointer;
+    }
+    .reason-card:hover{
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.20);
+    }
+    .reason-card:hover .reason-card__icon{
+        background-color: var(--Text-blue);
+    }
+    .reason-card:hover .reason-card__icon svg path{
+        fill: var(--color-white);
+    }
+
+    .available-addresses__list li:hover,
+    .form-agreement:hover{
+        cursor: pointer;
+    }
+}
+
+
+@media (max-width: 1440px) {
+    .reasons-section{
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .reason-card{
+        padding: 12px;
+    }
+
+    .reasons__grid{
+        overflow-x: auto;
+        grid-template-columns: repeat(4, minmax(312px, 1fr));
+        gap: 8px;
+        width: calc(100% + 32px);
+        margin-left: -16px;
+        padding: 0 16px 20px 16px;
+    }
+
+    .reasons__grid::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .reasons__grid::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+        background: var(--Text-gray);
+    }
+
+    .reasons__grid::-webkit-scrollbar-track {
+        background: var(--color-white);
+    }
+
+    .reasons__grid::-webkit-scrollbar-button {
+        display: none;
+    }
+
+    @supports (-moz-appearance: none) {
+        .reasons__grid {
+            scrollbar-width: thin;
+            scrollbar-color: var(--Text-gray) var(--color-white);
+        }
+    }
+}
+
+
+@media (max-width: 1300px) {
+    .header-nav-list a {
+        padding: 8px 12px;
+    }
+
+    .header-logo {
+        width: 165px;
+    }
+
+    .header-container,
+    .header__main,
+    .header__contacts {
+        gap: 16px;
+    }
+
+
+    .footer-bottom__list{
+        gap: 32px;
+    }
+
+    .branches-container,
+    .dos-school{
+        gap: 20px;
+    }
+
+
+}
+
+
+@media (max-width: 1220px) {
+    .header__main .logo-wrapper{
+        width: 145px;
+    }
+
+}
+
+
+
+@media (max-width: 992px) {
+
+    main{
+        padding-top: 57px;
+    }
+
+    .breadcrumbs{
+        margin: 12px 0 20px;
+        gap: 6px;
+    }
+
+    .breadcrumbs li:not(:first-child):before{
+        margin-right: 6px;
+    }
+
+    .header__main .logo-wrapper{
+        width: 130px;
+    }
+
+    .header-container{
+        justify-content: space-between;
+
+    }
+
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--color-white);
+        z-index: 10;
+    }
+
+    .header__menu{
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        width: max-content;
+        background-color: var(--color-white);
+        padding: 4px 16px 24px;
+        border-radius: 0 0 12px 12px;
+        gap: 12px;
+    }
+
+    .header__menu.active{
+        display: flex;
+    }
+
+    .header__menu,
+    .header-nav-list,
+    .header__contacts{
+        flex-direction: column;
+    }
+
+    .header__menu{
+        align-items:start;
+    }
+    .header-nav-list a{
+        justify-content: start;
+        padding: 12px 0;
+        border-bottom: 1px solid var(--Background-light-gray-2);
+    }
+
+    .header-nav{
+        width: 100%;
+    }
+
+
+
+
+    .header-city svg{
+        width:12px;
+        height:15px;
+    }
+
+    .section-content{
+        margin-top: 20px;
+    }
+
+    .section-top{
+        flex-direction: column;
+    }
+
+
+    .home-top__mobile-banner{
+        display: block;
+        height: 273px;
+
+    }
+
+    .home-top{
+        background-image: none;
+        padding-top: 40px;
+    }
+    .home-top__mobile-banner{
+        background-image: url("/assets/images/banners/home-tope-mobile-bg.webp");
+        background-repeat: no-repeat;
+        background-position: right;
+        margin: -12px 0;
+    }
+
+    .page-top-section .additional-advantages{
+        margin-top: 0;
+    }
+
+    .our-advantages,
+    .additional-advantages{
+        overflow-x: auto;
+    }
+
+    .page-top__btn{
+        max-width: 100%;
+    }
+
+    .mobile-swipe-container{
+        width: calc(100% + 32px);
+        margin-left: -16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .our-advantages__item{
+        padding: 12px;
+        gap: 8px;
+    }
+    .our-advantages{
+        gap: 8px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .categories-card__image{
+        height: 156px;
+        min-height: 156px;
+    }
+
+    .categories-card{
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .categories-card__tag{
+        top: 8px;
+        left: 8px;
+        height: 32px;
+    }
+
+    .categories-card__content{
+        gap: 12px;
+    }
+    .categories-card__list,
+    .categories-card__bottom{
+        padding-top: 12px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .promotions-payments{
+        grid-template-columns: 100%;
+        gap: 12px;
+    }
+
+    .promotions-payments__card{
+        padding: 20px;
+        min-height: 178px;
+    }
+
+    .promotions-payments__card-content{
+        gap: 12px;
+    }
+
+    .more-courses-btn{
+        max-width: 100%;
+    }
+
+    .trainings-wrapper{
+        grid-template-columns: 100%;
+        gap: 12px;
+    }
+    .training-step{
+        padding: 16px 16px 20px;
+        gap: 12px;
+    }
+    .sign-up-btn{
+        max-width: 100%;
+    }
+    .step-number{
+        height: auto;
+        width: fit-content;
+        padding: 8px;
+    }
+    .step-list .step-number::before{
+        padding-top: 2px;
+    }
+
+
+    .features{
+        grid-template-columns: 100%;
+        gap:12px;
+    }
+
+    .feature{
+        padding: 16px;
+    }
+
+    .feature-image{
+        display: none;
+    }
+
+    .feature-description{
+        gap: 4px;
+    }
+
+    .feature-icon{
+        height: 40px;
+        width: 40px;
+    }
+
+
+    .instructors-card{
+        padding: 16px;
+        gap: 16px;
+    }
+    .instructors-card__bottom{
+        padding-top: 8px;
+    }
+
+    .instructor-image{
+        width: 64px;
+        min-width: 64px;
+        height: 64px;
+    }
+
+    .instructor-data{
+        gap: 2px;
+    }
+
+    .instructors-card__top{
+        gap: 12px;
+    }
+
+
+
+    .exam-advantages__banner{
+        margin-top: 16px;
+        background-image: url("/assets/images/banners/banner-bg-1-mobile.webp");
+        background-position: bottom;
+        padding: 24px 24px 157px 24px;
+        flex-direction: column;
+    }
+
+    .exam-advantages__banner-content{
+        padding: 12px 0 0 0;
+        gap: 12px;
+        border-left: none;
+        border-top: 1px solid var(--color-white);
+    }
+
+    .banner-graduate__content{
+        gap: 2px;
+    }
+
+    .exam-advantages{
+        overflow-x: auto;
+        gap: 8px;
+        width: calc(100% + 32px);
+        margin-left: -16px;
+        padding: 0 16px;
+    }
+
+    .resetScrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .resetScrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+
+
+
+    .reviews-card{
+        flex-direction: column-reverse;
+        justify-content: start;
+        gap: 20px;
+        padding: 20px;
+    }
+    .reviews-creator__image{
+        height: 96px;
+        width: 96px;
+        min-height: 96px;
+        min-width: 96px;
+    }
+
+    .reviews-card__content{
+        height: 100%;
+    }
+
+    .reviews-card__content-bottom{
+        padding-top: 8px;
+    }
+
+    .slider-controls{
+        display: none;
+    }
+
+    .slider-block .slider-pagination{
+        display: block;
+        bottom: 0;
+        left: 16px;
+        top: auto;
+        background-color: var(--color-white);
+        height: 4px;
+        width: calc(100% - 32px);
+
+    }
+
+    .slider-block .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+        background-color: var(--Text-gray);
+        height: 4px;
+    }
+
+    .slider-block{
+        padding-bottom: 17px;
+        position: relative;
+        width: calc(100% + 32px);
+        margin-left: -16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .reviews-section{
+        padding: 24px 0;
+    }
+
+
+
+    .faq-section__content{
+        gap: 12px;
+    }
+    .open .faq-answer{
+        margin-top: 8px;
+    }
+    .faq-question{
+        padding: 16px 20px;
+    }
+    .faq-answer-content{
+        padding: 0 20px 16px;
+    }
+
+
+    .advantages{
+        grid-template-columns: 100%;
+        gap: 12px;
+    }
+
+    .advantage{
+        padding: 20px;
+        gap: 12px;
+    }
+
+    .advantage-content{
+        gap: 4px;
+    }
+    .advantage-icon{
+        height: 40px;
+        width: 40px;
+        border-radius: 6px;
+    }
+
+    .advantage-icon svg{
+        width: 18px;
+    }
+
+
+
+
+    .any-questions-section{
+        padding: 20px 16px;
+    }
+
+    .any-questions__contacts{
+        grid-template-columns: 100%;
+        gap: 8px;
+        margin-top: 12px;
+    }
+    .any-questions__contact{
+        padding: 16px;
+        gap: 12px;
+    }
+    .any-questions__contact-icon{
+        height: 32px;
+        width: 32px;
+        min-width: 32px;
+    }
+    .any-questions__contact-icon svg{
+        width: 15px;
+    }
+
+    .any-questions__top{
+        gap: 4px;
+    }
+
+    .consultation-banner{
+        padding: 16px;
+    }
+
+
+    .branches-container,
+    .dos-school{
+        flex-direction: column;
+    }
+
+    .dos-school__content,
+    .dos-school__form{
+        max-width: 100%;
+    }
+    .dos-school-stories{
+        margin-top: 24px;
+        grid-template-columns: 100%;
+        gap: 12px;
+    }
+
+    .dos-school__title{
+        margin-top: 16px;
+    }
+
+
+    .branches-section,
+    .dos-school-section{
+        padding: 24px 0;
+    }
+
+    .branches-nam{
+        margin-top: 20px;
+    }
+    .available-addresses{
+        margin-top: 12px;
+    }
+    .available-addresses__list li{
+        padding: 12px;
+    }
+
+    .available-addresses__icon{
+        height: 40px;
+        width: 40px;
+        min-width: 40px;
+    }
+    .map-wrapper{
+        height: 361px;
+        max-width: 100%;
+    }
+
+    .consultation-banner__bottom{
+        flex-direction: column;
+    }
+    .consultation-description{
+        max-width: 100%;
+    }
+    .branches-container-col{
+        max-width: 100%;
+    }
+
+    .dos-school__form{
+        padding: 24px 20px;
+    }
+
+    .footer-bottom,
+    .footer-bottom__list{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-bottom{
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .footer-main{
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        padding-top: 20px;
+    }
+
+    .footer-logo__wrapper{
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-logo__wrapper .logo-wrapper{
+        max-width: 130px;
+        height: 12px;
+    }
+
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-nav__list{
+        align-items: center;
+    }
+
+    .footer-nav{
+        text-align: center;
+    }
+
+    .footer-contacts{
+        align-items: center;
+    }
+
+    .popup-title{
+        max-width: 90%;
+    }
+
+
+    .error-page-content{
+        max-width: 224px;
+    }
+
+
+
+
+
+}

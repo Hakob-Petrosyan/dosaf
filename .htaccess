@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "Требуется авторизация"
+AuthUserFile /home/c107334/dosaaf-dev.thsdev.ru/.htpasswd
+Require valid-user
+

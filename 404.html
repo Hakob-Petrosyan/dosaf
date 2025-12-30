@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+{{> head
+title = '404 error'
+}}
+<body>
+{{> header}}
+
+<main>
+    {{> breadcrumbs
+    currenPage = '404'
+    }}
+
+    <section class="width-container flexCenter">
+        <div class="error-page-content flexColumn flexCenter textAlign">
+            <div class="error-page__image flexBox">
+                <img src="/assets/images/main-images/error-image.webp" alt="error 404">
+            </div>
+            <h1 class="">Страница <span class="colorOrange">не&nbsp;найдена</span></h1>
+            <p class="colorDarkGray h4">Страница была удалена или&nbsp;перемещена</p>
+            <a href="/home.html" class="error-page__btn btn-custom redFillBtn borderRadius-12 w_FitContent_100">На главную</a>
+        </div>
+    </section>
+
+</main>
+
+
+{{> footer}}
+
+{{> fixed-bottom-menu}}
+
+{{> popUps}}
+
+{{> scripts}}
+</body>
+</html>
