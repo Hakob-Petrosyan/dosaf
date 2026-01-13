@@ -5,10 +5,10 @@
     .reason-card:hover{
         box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.20);
     }
-    .reason-card:hover .reason-card__icon{
+    .reason-card:hover .icon-wrapper{
         background-color: var(--Text-blue);
     }
-    .reason-card:hover .reason-card__icon svg path{
+    .reason-card:hover .icon-wrapper svg path{
         fill: var(--color-white);
     }
 
@@ -19,12 +19,8 @@
 }
 
 
-@media (max-width: 1440px) {
-    .reasons-section{
-        padding-top: 24px;
-        padding-bottom: 24px;
-    }
 
+@media (max-width: 1440px) {
     .reason-card{
         padding: 12px;
     }
@@ -170,9 +166,6 @@
         width: 100%;
     }
 
-
-
-
     .header-city svg{
         width:12px;
         height:15px;
@@ -185,7 +178,6 @@
     .section-top{
         flex-direction: column;
     }
-
 
     .home-top__mobile-banner{
         display: block;
@@ -232,19 +224,6 @@
         gap: 8px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     .categories-card__image{
         height: 156px;
         min-height: 156px;
@@ -268,38 +247,6 @@
     .categories-card__bottom{
         padding-top: 12px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     .promotions-payments{
         grid-template-columns: 100%;
@@ -385,8 +332,6 @@
         gap: 12px;
     }
 
-
-
     .exam-advantages__banner{
         margin-top: 16px;
         background-image: url("/assets/images/banners/banner-bg-1-mobile.webp");
@@ -422,9 +367,6 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
-
-
-
 
     .reviews-card{
         flex-direction: column-reverse;
@@ -476,11 +418,10 @@
         padding-right: 16px;
     }
 
-    .reviews-section{
-        padding: 24px 0;
+    .custom-container {
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
-
-
 
     .faq-section__content{
         gap: 12px;
@@ -494,7 +435,6 @@
     .faq-answer-content{
         padding: 0 20px 16px;
     }
-
 
     .advantages{
         grid-template-columns: 100%;
@@ -518,9 +458,6 @@
     .advantage-icon svg{
         width: 18px;
     }
-
-
-
 
     .any-questions-section{
         padding: 20px 16px;
@@ -552,7 +489,6 @@
         padding: 16px;
     }
 
-
     .branches-container,
     .dos-school{
         flex-direction: column;
@@ -570,12 +506,6 @@
 
     .dos-school__title{
         margin-top: 16px;
-    }
-
-
-    .branches-section,
-    .dos-school-section{
-        padding: 24px 0;
     }
 
     .branches-nam{
@@ -667,6 +597,36 @@
 
     .error-page-content{
         max-width: 224px;
+    }
+
+    .needed-documents__wrapper{
+        grid-template-columns: 100%;
+        gap: 12px;
+    }
+
+    .needed-documents__item{
+        padding: 20px;
+    }
+
+    .needed-documents-item__title{
+        min-height: unset;
+    }
+
+    .icon-wrapper{
+        height: 40px;
+        width: 40px;
+        min-width: 40px;
+    }
+
+    .needed-documents__important-info{
+        padding: 16px;
+        flex-direction: column;
+        align-items: start;
+        gap: 12px;
+    }
+
+    .needed-documents-section{
+        padding: 24px 0;
     }
 
 

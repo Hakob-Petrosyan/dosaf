@@ -66,6 +66,17 @@ main{
     color: var(--Text-red);
 }
 
+.bg__lightGray2{
+    background-color: var(--Background-light-gray-2);
+}
+
+.bg__white{
+    background-color: var(--color-white);
+}
+
+
+
+
 a {
     text-decoration: none;
     color: var(--Text-black);
@@ -123,6 +134,9 @@ button {
 .borderRadius-12{
     border-radius: 12px;
 }
+.borderRadius-16{
+    border-radius: 16px;
+}
 .flexBox {
     display: flex;
 }
@@ -142,6 +156,10 @@ button {
 .flexJustifyBetween{
     display: flex;
     justify-content: space-between;
+}
+.flexJustifyCenter{
+    display: flex;
+    justify-content: center;
 }
 .customBoxShadow{
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08);
@@ -201,6 +219,19 @@ img{
     word-break: break-word;
 }
 
+.customScroll{
+    overflow-x: auto;
+}
+
+.resetScrollbarStyle::-webkit-scrollbar {
+    display: none;
+}
+
+/* Скрываем scrollbar для IE, Edge и Firefox */
+.resetScrollbarStyle {
+    -ms-overflow-style: none;  /* IE и Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 
 
 
