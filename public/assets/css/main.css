@@ -111,7 +111,7 @@ header {
     max-width: fit-content;
 }
 
-.page-top-section .additional-advantages{
+.additional-advantages{
     margin-top: 104px;
     display: grid;
     grid-template-columns: repeat(4, minmax(220px, 1fr));
@@ -946,16 +946,6 @@ select {
     background-size: 7px;
 }
 
-
-
-
-
-
-
-
-
-
-
 .any-questions-section {
     padding: 24px 32px;
 }
@@ -1205,6 +1195,7 @@ footer {
 /*END error page*/
 
 
+/*needed documents*/
 .policy-content h2,
 .policy-content h3,
 .policy-content h4,
@@ -1251,3 +1242,282 @@ footer {
     height: 24px;
     width: 24px;
 }
+/*END needed documents*/
+
+/*medical examination*/
+.your-question-btn{
+    margin-top: 32px;
+}
+
+.top-section-layout{
+    display: grid;
+    grid-template-columns: minmax(300px, 800px) minmax(300px, 400px);
+    gap: 20px;
+    justify-content: space-between;
+    padding: 32px 40px;
+}
+
+.columns-layout{
+    display: grid;
+    grid-template-columns: minmax(300px, 900px) minmax(300px, 440px);
+    gap: 20px;
+}
+
+.top-section__subtitle{
+    margin-top: 12px;
+}
+
+.general-advantages{
+    margin-top: 20px;
+    gap: 20px;
+}
+.general-advantages__item{
+    gap: 12px;
+    padding: 20px;
+    width: 100%;
+}
+
+.general-advantages__icon{
+    width: 24px;
+    min-width: 24px;
+}
+.general-advantages__icon svg{
+    width: 100%;
+}
+
+.top-aside__image{
+    height: 170px;
+    border-radius: 12px;
+}
+
+.top-aside__content{
+    margin-top: 16px;
+}
+
+.top-aside__content,
+.top-aside__buttons{
+    gap: 8px;
+}
+
+.general-info-container{
+    padding: 40px;
+    gap: 48px;
+}
+.general-info__top-subtitle{
+    margin-top: 12px;
+}
+.general-info__important{
+    margin-top: 20px;
+    padding: 16px;
+    gap: 16px;
+}
+
+.general-info__important-icon{
+    height: 56px;
+    width: 56px;
+    min-width: 56px;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.20);
+
+}
+
+.general-info__important-content{
+    gap: 4px;
+}
+
+.certificate-type__subtitle{
+    margin-top: 2px;
+}
+.certificate-type__content{
+    margin-top: 16px;
+    padding: 20px 24px;
+    gap: 8px;
+}
+
+.certificate-type__bottom{
+    padding-top: 8px;
+}
+
+.certificate-type__list{
+    gap: 8px;
+}
+.certificate-type__list li{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.general-info__card{
+    gap: 16px;
+    padding: 20px 24px;
+}
+
+.general-info-checklist{
+    margin-top: 12px;
+    gap: 12px;
+}
+.general-info-checklist li{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.general-info-checklist li:before{
+    content: url("/assets/images/icons/checkmark-icon.webp");
+    height: 16px;
+}
+
+.general-info-bottom-checklist{
+    padding-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.medical-checklist__subtitle{
+    margin-top: 4px;
+}
+
+.general-info-bottom-checklist li{
+    border-radius: 6px;
+    padding: 4px 6px;
+    background-color: var(--color-shadow);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.general-info-bottom-checklist li:before{
+    content: url("/assets/images/icons/check-mark-white.svg");
+    height: 14px;
+}
+
+.medical-restrictions{
+    gap: 16px;
+}
+
+.medical-restrictions__subtitle{
+    margin-top: 4px;
+}
+
+.restrictions__list{
+    margin-top: 12px;
+    gap: 12px;
+}
+
+.restrictions__list li{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.restrictions__list li:before {
+    content: url("/assets/images/icons/restrictions-icon.png");
+    height: 14px;
+}
+
+.medical-restrictions__lists{
+    padding: 20px 24px;
+    gap: 20px;
+}
+
+.medical-restrictions__lists-bottom{
+    padding-top: 8px;
+}
+
+.medical-restrictions__important{
+    background: linear-gradient(90deg, #D4D7DB 0%, #E5E8EC 100%);
+    padding: 8px 8px 8px 20px;
+    gap: 8px;
+}
+
+.medical-restrictions__important-icon{
+    height: 24px;
+    width: 24px;
+    min-width: 24px;
+}
+
+.dos-school-form__btn{
+    gap: 8px;
+}
+
+.sign-up__form{
+    padding: 24px 24px 32px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.20);
+}
+
+.sign-up-form__top{
+    gap: 2px;
+}
+
+.sign-up-form__content{
+    margin-top: 16px;
+
+}
+
+.sign-up-form__content,
+.sign-up-form-contacts,
+.sign-up-form__inputs{
+    gap: 12px;
+}
+
+.sign-up-form__label{
+    gap: 8px;
+}
+
+.sign-up-form__label,
+.sign-up-form__label input{
+    width: 100%;
+}
+
+.sign-up-form__label input {
+    padding: 0 12px 0 16px;
+    height: 40px;
+}
+.sign-up-form__label input:focus{
+    border: 1px solid var(--Background-light-gray);
+    outline: none;
+}
+
+.card-bottom-info{
+    margin-top: 16px;
+    padding-top: 6px;
+}
+
+.column-layout__sidebar{
+    gap: 20px;
+}
+
+.sidebar-card{
+    padding: 20px;
+}
+
+.sidebar-contacts{
+    padding: 24px;
+}
+.sidebar-contacts__list{
+    margin-top: 8px;
+    gap: 4px;
+}
+.sidebar-contacts__list li{
+    display: flex;
+    gap: 12px;
+    padding: 6px 0;
+}
+.sidebar-contacts__item{
+    gap: 8px;
+}
+
+.download-documents{
+    gap: 8px;
+}
+
+.list-style__red{
+    padding-left: 19px;
+    margin: 12px 0 0 0;
+    gap: 8px;
+}
+.list-style__red li::marker {
+    color: var(--color-red-10);
+}
+
+/*END medical examination*/

@@ -9,9 +9,13 @@
     --Text-dark-gray:#343434;
     --Text-gray: #696969;
 
+    --color-shadow: #F0F5FF;
+    --color-red-10: #FF5500;
+
     --Text-blue: #204BB3;
     --Text-red: #CF2906;
     --Text-orange: #F84C28;
+
 
     --overlay-bg: rgba(52, 52, 52, 0.10);
 }
@@ -47,6 +51,13 @@ main{
     margin-top: 96px;
 }
 
+.page-section-top{
+    margin-top: 64px;
+}
+
+.colorBlack{
+    color: var(--Text-black);
+}
 .colorWhite{
     color: var(--color-white);
 }
@@ -74,6 +85,13 @@ main{
     background-color: var(--color-white);
 }
 
+.bg__shadow{
+    background-color: var(--color-shadow);
+}
+
+.textNowrap{
+    white-space: nowrap;
+}
 
 
 
@@ -211,6 +229,12 @@ img{
     width: 100%;
 }
 
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .textAlign{
     text-align: center;
 }
@@ -246,9 +270,6 @@ img{
         padding-left: 16px;
         padding-right: 16px;
     }
-    .page-section{
-        margin-top: 56px;
-    }
 
 }
 
@@ -265,8 +286,19 @@ img{
     .mb-show{
         display: flex;
     }
+    .mb-hide{
+        display: none;
+    }
 
     .w_FitContent_100{
         max-width: 100%;
+    }
+
+    .page-section{
+        margin-top: 56px;
+    }
+
+    .page-section-top{
+        margin-top: 40px;
     }
 }

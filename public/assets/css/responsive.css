@@ -94,6 +94,10 @@
         width: 145px;
     }
 
+    .general-advantages{
+        gap: 8px;
+    }
+
 }
 
 
@@ -196,7 +200,7 @@
         margin: -12px 0;
     }
 
-    .page-top-section .additional-advantages{
+    .additional-advantages{
         margin-top: 0;
     }
 
@@ -629,8 +633,69 @@
         padding: 24px 0;
     }
 
+    .top-section-layout{
+        grid-template-columns: 100%;
+        padding: 20px;
+    }
+
+    .general-advantages{
+        flex-direction: column;
+    }
+    .top-aside__image{
+        height: 135px;
+    }
+
+    .columns-layout{
+        grid-template-columns: 100%;
+        gap: 56px;
+    }
+
+    .top-section__subtitle{
+        margin-top: 8px;
+    }
 
 
+    .general-info-container{
+        padding: 20px;
+        gap: 32px;
+    }
+
+    .general-info__important{
+        flex-direction: column;
+        align-items: start;
+        gap: 12px;
+    }
+
+    .medical-restrictions__important{
+        padding: 16px;
+        flex-direction: column;
+        gap: 8px;
+        align-items: start;
+    }
+
+    .medical-restrictions__lists{
+        padding: 20px;
+        gap: 16px;
+    }
+
+    .restrictions__list{
+        gap: 8px;
+    }
+    .sign-up__form{
+        padding: 24px 20px;
+    }
+    .sign-up-form-contacts{
+        flex-direction: column;
+    }
+    .column-layout__sidebar{
+        gap: 12px;
+    }
+    .sidebar-contacts{
+        padding: 16px;
+    }
+    .your-question-btn{
+        margin-top: 20px;
+    }
 
 
 }
