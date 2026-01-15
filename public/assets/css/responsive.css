@@ -666,7 +666,7 @@
         gap: 12px;
     }
 
-    .medical-restrictions__important{
+    .attention-block{
         padding: 16px;
         flex-direction: column;
         gap: 8px;
@@ -696,6 +696,23 @@
     .your-question-btn{
         margin-top: 20px;
     }
+
+    .general-advantages__item{
+        padding: 12px 20px 12px 16px;
+    }
+    .general-info__top-subtitle{
+        margin-top: 8px;
+    }
+    .general-info__important-icon{
+        height: 48px;
+        width: 48px;
+        min-width: 48px;
+    }
+    .matCapital-steps li{
+        flex-direction: column;
+        align-items: start;
+    }
+
 
 
 }

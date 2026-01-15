@@ -19,7 +19,8 @@ export default defineConfig({
             // Указываем несколько директорий с partials
             partialDirectory: [
                 resolve(__dirname, 'src/components/common'),
-                resolve(__dirname, 'src/components/features')
+                resolve(__dirname, 'src/components/features'),
+                resolve(__dirname, 'src/components/blocks')
             ]
         })
     ],

@@ -1229,7 +1229,7 @@ footer {
     min-height: 52px;
 }
 
-.needed-documents-item__description{
+.general-subtitle{
     margin-top: 4px;
 }
 
@@ -1317,8 +1317,6 @@ footer {
     width: 56px;
     min-width: 56px;
     border-radius: 4px;
-    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.20);
-
 }
 
 .general-info__important-content{
@@ -1350,9 +1348,10 @@ footer {
     gap: 16px;
     padding: 20px 24px;
 }
-
+.general-info-card__content{
+    gap: 12px;
+}
 .general-info-checklist{
-    margin-top: 12px;
     gap: 12px;
 }
 .general-info-checklist li{
@@ -1373,10 +1372,6 @@ footer {
     gap: 8px;
 }
 
-.medical-checklist__subtitle{
-    margin-top: 4px;
-}
-
 .general-info-bottom-checklist li{
     border-radius: 6px;
     padding: 4px 6px;
@@ -1393,10 +1388,6 @@ footer {
 
 .medical-restrictions{
     gap: 16px;
-}
-
-.medical-restrictions__subtitle{
-    margin-top: 4px;
 }
 
 .restrictions__list{
@@ -1424,13 +1415,13 @@ footer {
     padding-top: 8px;
 }
 
-.medical-restrictions__important{
+.attention-block{
     background: linear-gradient(90deg, #D4D7DB 0%, #E5E8EC 100%);
     padding: 8px 8px 8px 20px;
     gap: 8px;
 }
 
-.medical-restrictions__important-icon{
+.attention-block-icon{
     height: 24px;
     width: 24px;
     min-width: 24px;
@@ -1521,3 +1512,53 @@ footer {
 }
 
 /*END medical examination*/
+
+/*payment*/
+.childes-future{
+    margin-top: 20px;
+    padding: 16px;
+}
+
+.matCapital__card{
+
+}
+
+.matCapital-steps{
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.matCapital-steps li{
+    padding: 20px;
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 12px;
+}
+.matCapital-card__bottom{
+    margin-top: 12px;
+}
+
+
+
+
+
+/*End payment*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

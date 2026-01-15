@@ -125,6 +125,48 @@ function closeByOverlay() {
     });
 }
 
+function checkForm() {
+    const forms = document.querySelectorAll('[data-form]');
+
+    forms.forEach(form => {
+        const requiredFields = form.querySelectorAll('[data-required]');
+        const agreement = form.querySelector('[data-agreement]');
+        const submitBtn = form.querySelector('[data-submit]');
+
+        if (!submitBtn) return;
+
+        const checkFormValidity = () => {
+            let isValid = true;
+
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                }
+            });
+
+            if (agreement && !agreement.checked) {
+                isValid = false;
+            }
+
+            submitBtn.disabled = !isValid;
+        };
+
+        requiredFields.forEach(field => {
+            field.addEventListener('input', checkFormValidity);
+            field.addEventListener('change', checkFormValidity);
+        });
+
+        if (agreement) {
+            agreement.addEventListener('change', checkFormValidity);
+        }
+
+        checkFormValidity();
+    });
+}
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     openCloseBlock()
     initTabs()
@@ -133,6 +175,7 @@ document.addEventListener('DOMContentLoaded', function () {
     mobileAnchorClick()
     openPopUp()
     closeByOverlay()
+    checkForm()
 
 })
 
