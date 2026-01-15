@@ -1,5 +1,6 @@
 @media (hover: hover) {
-    button {
+    button,
+    .cursorPointer{
         cursor: pointer;
     }
     .reason-card:hover{
@@ -711,6 +712,27 @@
     .matCapital-steps li{
         flex-direction: column;
         align-items: start;
+    }
+
+    .top-aside__buttons{
+        flex-direction: column;
+    }
+
+    .trial-lesson-stages{
+        grid-template-columns: 100%;
+    }
+
+    .trial-lesson-stage{
+        padding: 16px 20px 20px;
+        gap: 12px;
+    }
+
+    .general-info-card__content,
+    .general-info-checklist{
+        gap: 8px;
+    }
+    .for-drivers__list{
+        gap: 8px;
     }
 
 

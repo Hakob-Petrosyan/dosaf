@@ -1303,11 +1303,13 @@ footer {
     padding: 40px;
     gap: 48px;
 }
+.general-info__top{
+    gap: 20px;
+}
 .general-info__top-subtitle{
     margin-top: 12px;
 }
 .general-info__important{
-    margin-top: 20px;
     padding: 16px;
     gap: 16px;
 }
@@ -1416,10 +1418,11 @@ footer {
 }
 
 .attention-block{
-    background: linear-gradient(90deg, #D4D7DB 0%, #E5E8EC 100%);
     padding: 8px 8px 8px 20px;
     gap: 8px;
 }
+
+
 
 .attention-block-icon{
     height: 24px;
@@ -1501,10 +1504,11 @@ footer {
 .download-documents{
     gap: 8px;
 }
-
+.review-periods__list{
+    margin-top: 12px;
+}
 .list-style__red{
     padding-left: 19px;
-    margin: 12px 0 0 0;
     gap: 8px;
 }
 .list-style__red li::marker {
@@ -1539,24 +1543,128 @@ footer {
 .matCapital-card__bottom{
     margin-top: 12px;
 }
-
-
-
-
-
 /*End payment*/
 
+/*trial deriving*/
 
+.categories-checklist{
+    gap: 8px;
+}
 
+.categories-checklist li{
+    padding: 8px 20px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #D4D7DB 0%, #E5E8EC 100%);
+}
 
+.general-info-card__bottom{
+    padding-top: 8px;
+}
 
+.trial-lesson-stages{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
 
+.trial-lesson-stage{
+    gap: 16px;
+    padding: 16px 24px 24px;
+}
 
+.trial-lesson-stage__list{
+    gap: 8px;
+}
 
+.trial-lesson-stage__top{
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--Stroke-light-gray-2);
+}
 
+.rial-lesson__cost{
+    padding: 24px 24px 32px;
+}
 
+.custom-table td{
+    padding: 12px;
+}
 
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 4px;
+}
 
+.custom-table td {
+    padding: 12px;
+    border: 1px solid var(--Background-light-gray);
+}
+
+.custom-table thead td{
+    border-top: none;
+}
+
+.custom-table thead tr td:first-child{
+    border-left: none;
+}
+
+.custom-table thead tr td:last-child{
+    border-right: none;
+}
+
+.custom-table tbody tr:last-child td{
+    border-bottom: none;
+}
+
+.custom-table tbody tr td:first-child{
+    border-left: none;
+}
+.custom-table tbody tr td:last-child{
+    border-right: none;
+}
+
+.trial-lesson__cost{
+    padding: 24px 24px 32px;
+}
+
+.type-signUp__list{
+    margin-top: 16px;
+    margin-bottom: 0;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--Stroke-light-gray-2);
+}
+
+.cars-params{
+    gap: 4px;
+    padding: 4px;
+}
+
+.car-param__item{
+    border: 1px solid var(--Stroke-light-gray-2);
+}
+.car-param__item:has(input:checked){
+    background-color: var(--Text-dark-gray);
+    color: var(--color-white);
+}
+/*END trial deriving*/
+
+.winter-driving__top-btn{
+    padding: 12px 8px;
+}
+.for-drivers{
+    padding: 20px;
+}
+
+.for-drivers__list{
+    margin-top: 12px;
+    gap: 12px;
+}
+
+.for-drivers__list li{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
 
 
 

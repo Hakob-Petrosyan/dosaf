@@ -9,6 +9,7 @@
     --Text-dark-gray: #343434;
     --Text-gray: #696969;
 
+    --color-green:#DDFFC3;
     --color-shadow: #F0F5FF;
     --color-red-10: #FF5500;
 
@@ -83,6 +84,10 @@ main {
     color: var(--Text-red);
 }
 
+.bg__colorGreen{
+    background-color: var(--color-green);
+}
+
 .bg__lightGray2 {
     background-color: var(--Background-light-gray-2);
 }
@@ -93,6 +98,14 @@ main {
 
 .bg__shadow {
     background-color: var(--color-shadow);
+}
+
+.bg__grayGradient{
+    background: linear-gradient(90deg, #D4D7DB 0%, #E5E8EC 100%);
+}
+
+.bg__colorGreen{
+    background-color: var(--color-green);
 }
 
 .textNowrap {
@@ -137,6 +150,7 @@ button {
     width: 100%;
     padding: 0 20px;
     font-weight: 500;
+    transition: color 300ms, background-color 300ms;
 }
 
 .redBtn {
@@ -205,6 +219,16 @@ button {
 
 .gap__8{
     gap: 8px;
+}
+.gap__12{
+    gap: 12px;
+}
+.gap__16{
+    gap: 16px;
+}
+
+.gap__20{
+    gap: 20px;
 }
 
 .customBoxShadow {
