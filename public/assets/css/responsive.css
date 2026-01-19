@@ -99,6 +99,10 @@
         gap: 8px;
     }
 
+    .our-advantages{
+        overflow: auto;
+    }
+
 }
 
 
@@ -205,7 +209,6 @@
         margin-top: 0;
     }
 
-    .our-advantages,
     .additional-advantages{
         overflow-x: auto;
     }
@@ -364,14 +367,7 @@
         padding: 0 16px;
     }
 
-    .resetScrollbar::-webkit-scrollbar {
-        display: none;
-    }
 
-    .resetScrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
 
     .reviews-card{
         flex-direction: column-reverse;
@@ -735,9 +731,50 @@
         gap: 8px;
     }
 
-    .table-grid-3 td{
-        width: 100%;
+    .category-top__section{
+        background-image: none !important;
     }
+
+    .top__mobile-banner{
+        height: 273px;
+        background-position: center right;
+        background-size: initial;
+        background-repeat: no-repeat;
+    }
+
+    .category-top__proposal{
+        flex-direction: column;
+        align-items: start;
+        gap: 12px;
+    }
+
+    .category-top-proposal__content{
+        gap: 12px;
+    }
+
+
+    .category-top__content{
+        grid-template-columns: 100%;
+
+    }
+
+    .category-top-proposal__description{
+        gap: 2px;
+    }
+
+    .category-top__advantages{
+        margin-top: 16px;
+    }
+
+    .category-form{
+        padding: 24px 20px;
+        gap: 20px;
+    }
+
+    .category-form__content{
+        gap: 12px;
+    }
+
 
 
 
