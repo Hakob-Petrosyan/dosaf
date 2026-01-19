@@ -318,14 +318,26 @@ img {
     scrollbar-width: none; /* Firefox */
 }
 
-button[disabled]{
-    background-color: var(--Background-light-gray);
-    border: 1px solid var(--Background-light-gray);
-    color: var(--Text-gray);
+.focus-agreement .form-agreement__check{
+    box-shadow: 0 0 0 0 transparent;
+    transition: 300ms;
+}
+.focus-agreement .form-agreement__check{
+    box-shadow: 0 0 8px 2px var(--Text-orange);
 }
 
-button[disabled] svg path{
-    fill: var(--Text-gray);
+
+.positionRelative{
+    position: relative;
+}
+
+.positionAbsolute{
+    position: absolute;
+}
+
+.positionSticky{
+    position: sticky;
+    top: 10px;
 }
 
 .mb-show {

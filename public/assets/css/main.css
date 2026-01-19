@@ -1612,6 +1612,10 @@ footer {
     border-right: none;
 }
 
+.custom-table tbody td{
+    background-color: var(--color-white);
+}
+
 .custom-table tbody tr:last-child td{
     border-bottom: none;
 }

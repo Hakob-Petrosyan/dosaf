@@ -126,43 +126,37 @@ function closeByOverlay() {
 }
 
 function checkForm() {
-    const forms = document.querySelectorAll('[data-form]');
+    const form = document.querySelector('[data-form]');
+    const agreement = form.querySelector('[data-agreement]');
+    const agreementFocus = form.querySelector('[data-agreement-focus]');
 
-    forms.forEach(form => {
-        const requiredFields = form.querySelectorAll('[data-required]');
-        const agreement = form.querySelector('[data-agreement]');
-        const submitBtn = form.querySelector('[data-submit]');
+    let focusTimeout;
 
-        if (!submitBtn) return;
-
-        const checkFormValidity = () => {
-            let isValid = true;
-
-            requiredFields.forEach(field => {
-                if (!field.value.trim()) {
-                    isValid = false;
-                }
-            });
-
-            if (agreement && !agreement.checked) {
-                isValid = false;
-            }
-
-            submitBtn.disabled = !isValid;
-        };
-
-        requiredFields.forEach(field => {
-            field.addEventListener('input', checkFormValidity);
-            field.addEventListener('change', checkFormValidity);
-        });
-
-        if (agreement) {
-            agreement.addEventListener('change', checkFormValidity);
+    form.addEventListener('submit', (e) => {
+        // Стандартная HTML5-валидация
+        if (!form.checkValidity()) {
+            return;
         }
 
-        checkFormValidity();
+        if (!agreement.checked) {
+            e.preventDefault();
+
+            // убираем предыдущий таймер, если был
+            clearTimeout(focusTimeout);
+
+            // добавляем класс
+            agreementFocus.classList.add('focus-agreement');
+
+            // убираем через 5 секунд
+            focusTimeout = setTimeout(() => {
+                agreementFocus.classList.remove('focus-agreement');
+            }, 5000);
+        }
     });
 }
+
+
+
 
 
 
@@ -176,7 +170,6 @@ document.addEventListener('DOMContentLoaded', function () {
     openPopUp()
     closeByOverlay()
     checkForm()
-
 })
 
 function initSliders() {
