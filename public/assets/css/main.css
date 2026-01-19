@@ -1591,19 +1591,33 @@ footer {
 
 .custom-table {
     width: 100%;
+    max-width: 100%;
     border-collapse: collapse;
     border-radius: 4px;
+    table-layout: fixed;
+}
+
+.table-grid-3 td{
+    width: 33%;
 }
 
 .custom-table td {
     padding: 12px;
     border: 1px solid var(--Background-light-gray);
+    word-break: break-word;
 }
 
 .custom-table thead td{
     border-top: none;
 }
 
+.custom-table tbody td{
+    background-color: var(--color-white);
+}
+.custom-table tbody td.attention-cell{
+    background-color: var(--color-green);
+    font-weight: 500;
+}
 .custom-table thead tr td:first-child{
     border-left: none;
 }
@@ -1648,6 +1662,7 @@ footer {
 }
 /*END trial deriving*/
 
+/*winter driving*/
 .winter-driving__top-btn{
     padding: 12px 8px;
 }
@@ -1666,7 +1681,10 @@ footer {
     gap: 12px;
 }
 
+.course-cost__block{
+    padding: 24px 24px 32px;
+}
 
 
-
+/*END winter driving*/
 

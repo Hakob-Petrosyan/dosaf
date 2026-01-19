@@ -735,6 +735,10 @@
         gap: 8px;
     }
 
+    .table-grid-3 td{
+        width: 100%;
+    }
+
 
 
 }
