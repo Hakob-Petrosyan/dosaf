@@ -1319,6 +1319,7 @@ footer {
     width: 56px;
     min-width: 56px;
     border-radius: 4px;
+    overflow: hidden;
 }
 
 .general-info__important-content{
@@ -1437,6 +1438,7 @@ footer {
 .sign-up__form{
     padding: 24px 24px 32px;
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.20);
+    height: fit-content;
 }
 
 .sign-up-form__top{
@@ -1670,7 +1672,58 @@ footer {
     gap: 12px;
 }
 
+/*categories pages*/
+.category-top__section{
+    padding-top: 14px;
+    padding-bottom: 21px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto;
+}
 
+.category-top__section .breadcrumbs{
+    margin-top: 0;
+}
+
+.category-top__content{
+    display: grid;
+    grid-template-columns: minmax(300px, 670px) minmax(300px, 436px);
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.category-top__advantages{
+    margin-top: 20px;
+}
+
+.category-top__proposal{
+    margin-top: 20px;
+    padding: 16px;
+    gap: 40px;
+}
+
+.category-top-proposal__content{
+    gap: 16px;
+}
+
+.category-form{
+    padding: 32px 40px;
+    gap: 24px;
+}
+
+.category-form__top{
+    gap: 12px;
+}
+
+.category-form__content{
+    gap: 20px;
+}
+
+.category-top-proposal__description{
+    gap: 4px;
+}
+
+/*END categories pages*/
 
 
 

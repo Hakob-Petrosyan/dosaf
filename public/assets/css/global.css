@@ -217,6 +217,9 @@ button {
     justify-content: center;
 }
 
+.gap__4{
+    gap: 4px;
+}
 .gap__8{
     gap: 8px;
 }
@@ -338,6 +341,15 @@ img {
 .positionSticky{
     position: sticky;
     top: 10px;
+}
+
+.resetScrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.resetScrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .mb-show {
