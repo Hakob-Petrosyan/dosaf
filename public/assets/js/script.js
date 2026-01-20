@@ -126,32 +126,32 @@ function closeByOverlay() {
 }
 
 function checkForm() {
-    const form = document.querySelector('[data-form]');
-    const agreement = form.querySelector('[data-agreement]');
-    const agreementFocus = form.querySelector('[data-agreement-focus]');
+    const forms = document.querySelectorAll('[data-form]');
 
-    let focusTimeout;
+    forms.forEach(form => {
+        const agreement = form.querySelector('[data-agreement]');
+        const agreementFocus = form.querySelector('[data-agreement-focus]');
 
-    form.addEventListener('submit', (e) => {
-        // Стандартная HTML5-валидация
-        if (!form.checkValidity()) {
-            return;
-        }
+        let focusTimeout;
 
-        if (!agreement.checked) {
-            e.preventDefault();
+        form.addEventListener('submit', (e) => {
+            // стандартная HTML5-валидация
+            if (!form.checkValidity()) {
+                return;
+            }
 
-            // убираем предыдущий таймер, если был
-            clearTimeout(focusTimeout);
+            if (!agreement.checked) {
+                e.preventDefault();
 
-            // добавляем класс
-            agreementFocus.classList.add('focus-agreement');
+                clearTimeout(focusTimeout);
 
-            // убираем через 5 секунд
-            focusTimeout = setTimeout(() => {
-                agreementFocus.classList.remove('focus-agreement');
-            }, 5000);
-        }
+                agreementFocus.classList.add('focus-agreement');
+
+                focusTimeout = setTimeout(() => {
+                    agreementFocus.classList.remove('focus-agreement');
+                }, 5000);
+            }
+        });
     });
 }
 
