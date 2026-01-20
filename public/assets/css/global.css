@@ -16,6 +16,7 @@
     --Text-blue: #204BB3;
     --Text-red: #CF2906;
     --Text-orange: #F84C28;
+    --color-light-orange:#FF5500;
 
 
     --overlay-bg: rgba(52, 52, 52, 0.10);
@@ -202,6 +203,11 @@ button {
     justify-content: center;
 }
 
+.flexAlignStart {
+    display: flex;
+    align-items: start;
+}
+
 .flexAlignCenter {
     display: flex;
     align-items: center;
@@ -216,6 +222,8 @@ button {
     display: flex;
     justify-content: center;
 }
+
+
 
 .gap__4{
     gap: 4px;
@@ -239,6 +247,10 @@ button {
 }
 .customBoxShadow20{
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.20);
+}
+
+.borderLightOrange{
+    border: 1px solid var(--color-light-orange);
 }
 
 .borderLightGray {
@@ -315,6 +327,7 @@ img {
     display: none;
 }
 
+
 /* Скрываем scrollbar для IE, Edge и Firefox */
 .resetScrollbarStyle {
     -ms-overflow-style: none; /* IE и Edge */
@@ -352,6 +365,49 @@ img {
     scrollbar-width: none;
 }
 
+.marginTopAuto{
+    margin-top: auto;
+}
+
+input{
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+input:focus,
+input:active{
+    outline: none;
+    border-color: var(--Text-gray);
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--Text-gray);
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--Text-gray);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--Text-gray);
+}
+
+
+
 .mb-show {
     display: none;
 }
@@ -365,6 +421,23 @@ img {
 }
 
 @media (max-width: 992px) {
+
+    .customScrollbarMobile{
+        padding-bottom: 20px;
+    }
+
+    .customScrollbarMobile::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .customScrollbarMobile::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+        background: var(--Text-gray);
+    }
+
+    .customScrollbarMobile::-webkit-scrollbar-track {
+        background: var(--Stroke-light-gray);
+    }
 
     .btn-custom {
         padding: 0 16px;

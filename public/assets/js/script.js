@@ -155,9 +155,41 @@ function checkForm() {
     });
 }
 
+function initCustomSelect() {
+    document.querySelectorAll('[data-custom-select]').forEach(select => {
+        const valueInput = select.querySelector('[data-custom-select-value]');
+        const valueText  = select.querySelector('[data-custom-select-value-text]');
+        const items      = select.querySelectorAll('[data-custom-select-list] li');
+
+        items.forEach(item => {
+            item.addEventListener('click', () => {
+                const value = item.textContent.trim();
+
+                valueInput.value = value;
+                valueText.textContent = value;
+
+                items.forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+
+                select.classList.remove('open');
+                select.querySelector('[data-open-block]')?.removeAttribute('style');
+            });
+        });
+    });
+}
 
 
-
+document.addEventListener('click', (e) => {
+    const openedSelects = document.querySelectorAll(
+        '[data-custom-select]'
+    );
+    openedSelects.forEach(wrapper => {
+        if (wrapper.contains(e.target)) return;
+        const openingBlock = wrapper.querySelector('[data-open-block]');
+        wrapper.classList.remove('open');
+        openingBlock.removeAttribute('style');
+    });
+});
 
 
 
@@ -170,7 +202,36 @@ document.addEventListener('DOMContentLoaded', function () {
     openPopUp()
     closeByOverlay()
     checkForm()
+    initCustomSelect()
 })
+
+
+document.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-calculator-plus], [data-calculator-minus]');
+
+    if (!btn) return;
+
+    const step = Number(
+        btn.dataset.calculatorPlus || btn.dataset.calculatorMinus
+    );
+
+    const wrapper = btn.closest('[data-calculator-price]');
+    const input = wrapper.querySelector('[data-calculator-price-value]');
+
+    const value = Number(input.value) || 0;
+
+    if (btn.hasAttribute('data-calculator-plus')) {
+        const step = Number(btn.dataset.calculatorPlus);
+        input.value = value + step;
+    }
+
+    if (btn.hasAttribute('data-calculator-minus')) {
+        const step = Number(btn.dataset.calculatorMinus);
+        input.value = Math.max(0, value - step);
+    }
+
+});
+
 
 function initSliders() {
     const sliders = document.querySelectorAll('[data-slider-group-item]');
