@@ -153,14 +153,13 @@
 
     .header__menu {
         display: none;
-        position: absolute;
-        right: 0;
-        top: 100%;
-        width: max-content;
+        position: fixed;
+        inset: 0;
         background-color: var(--color-white);
-        padding: 4px 16px 24px;
+        padding: 4px 16px 56px;
         border-radius: 0 0 12px 12px;
         gap: 12px;
+        justify-content: unset;
     }
 
     .header__menu.active {
@@ -171,6 +170,7 @@
     .header-nav-list,
     .header__contacts {
         flex-direction: column;
+        width: 100%;
     }
 
     .header__menu {
@@ -191,6 +191,19 @@
         width: 12px;
         height: 15px;
     }
+
+    .mobile-menu-header{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__contacts{
+        margin-top: auto;
+    }
+
+
+
+
 
     .section-content {
         margin-top: 20px;
