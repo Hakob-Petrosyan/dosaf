@@ -1,4 +1,4 @@
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
     button,
     .cursorPointer {
         cursor: pointer;
@@ -305,6 +305,7 @@
     .mobile-menu-header__btn{
         height: 40px;
         width: 40px;
+        min-width: 40px;
     }
 
     .city-list__wrapper,
@@ -315,7 +316,6 @@
         display: none;
         position: fixed;
         inset: 0;
-        z-index: 6;
         background-color: var(--color-white);
         padding: 4px 16px 56px;
         box-shadow: none;
@@ -327,6 +327,7 @@
     .header-dropdown__list.active{
         display: flex;
         flex-direction: column;
+        z-index: 10;
     }
 
     .city-list__wrapper.active .header-dropdown__list{
@@ -336,6 +337,8 @@
     .header-dropdown{
         flex: 1;
         padding: 0;
+        overflow-y: auto;
+
     }
 
     .header-dropdown .header-nav__btn{

@@ -168,8 +168,7 @@ function headerDropdown(){
 
     if (!btn || !catalog) return;
 
-    if (window.matchMedia('(hover: hover)').matches) {
-
+    if (window.innerWidth > 992) {
         [btn, catalog].forEach(el => {
             el.addEventListener('mouseenter',() => {
                 catalog.classList.add('active');
@@ -180,12 +179,16 @@ function headerDropdown(){
                 btn.classList.remove('hover-type');
             });
         });
-    }
-
-    if (window.matchMedia('(hover: none)').matches) {
+    }else {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
-            catalog.classList.toggle('active');
+            e.stopPropagation();
+
+            catalog.classList.add('active');
+
+            /*     pointerdown     setTimeout(() => {
+
+                      }, 10);*/
         });
     }
 }
@@ -197,7 +200,9 @@ function mobileInnerMenus(){
     if (isMobile) {
         const mobileInnerMenuButtons = document.querySelectorAll('[data-mobile-inner-menu-btn]');
         mobileInnerMenuButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                e.preventDefault();
                 const mobileInnerMenuItem = btn.closest('[data-mobile-inner-menu-item]');
                 const mobileInnerMenuList = mobileInnerMenuItem.querySelector('[data-mobile-inner-menu-list]');
                 mobileInnerMenuList.classList.add('active');

@@ -47,7 +47,7 @@ header {
     transition: color 300ms;
 }
 
-.header-city:hover svg path{
+.header-city svg path{
     transition: fill 300ms;
 }
 
