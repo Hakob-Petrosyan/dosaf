@@ -275,7 +275,7 @@ button {
 
 .w_FitContent {
     width: 100%;
-    max-width: fit-content
+    max-width: fit-content;
 }
 
 .w_FitContent_100 {
@@ -327,11 +327,9 @@ img {
     display: none;
 }
 
-
-/* Скрываем scrollbar для IE, Edge и Firefox */
 .resetScrollbarStyle {
-    -ms-overflow-style: none; /* IE и Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .focus-agreement .form-agreement__check{
@@ -407,10 +405,33 @@ input[type="number"]:focus {
 }
 
 
+.customScrollbar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.customScrollbar::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: var(--Stroke-light-gray-2);
+}
+
+.customScrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.customScrollbar::-webkit-scrollbar-button {
+    display: none;
+}
+
+.animate-icon{
+    transform: scale(1, 1);
+    transition: transform 300ms;
+}
+
 
 .mb-show {
     display: none;
 }
+
 
 @media (max-width: 1300px) {
     .width-container {
