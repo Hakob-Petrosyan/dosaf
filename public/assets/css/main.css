@@ -140,6 +140,8 @@ header {
 .header-dropdown{
     min-width: 292px;
     padding: 16px 24px 24px;
+    overflow-y: auto;
+    max-height: 234px;
 }
 
 .header-dropdown a svg{
@@ -2128,9 +2130,14 @@ footer {
     margin-top: 24px;
 }
 
+.trainingPark__attention{
+    padding: 12px 12px 12px 20px;
+}
 
-
-
+.trainingPark__card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 
 

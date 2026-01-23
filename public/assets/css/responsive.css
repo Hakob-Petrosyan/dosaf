@@ -337,8 +337,7 @@
     .header-dropdown{
         flex: 1;
         padding: 0;
-        overflow-y: auto;
-
+        max-height: 100%;
     }
 
     .header-dropdown .header-nav__btn{
