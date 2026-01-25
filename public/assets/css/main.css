@@ -1473,6 +1473,10 @@ footer {
     border-radius: 4px;
 }
 
+.general-info__important-icon img{
+    border-radius: 4px;
+}
+
 .general-info__important-content{
     gap: 4px;
 }
@@ -1536,7 +1540,7 @@ footer {
 }
 
 .general-info-bottom-checklist li:before{
-    content: url("/assets/images/icons/check-mark-white.svg");
+    content: url("/assets/images/icons/check-mark-transparent.svg");
     height: 14px;
 }
 
@@ -2134,18 +2138,68 @@ footer {
     padding: 12px 12px 12px 20px;
 }
 
-.trainingPark__card{
+.vehicle-card{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
+.vehicle-card__info{
+    padding: 32px 24px 24px;
+    gap: 24px;
+    height: 100%;
+}
+.vehicle-card__specs{
+    gap: 12px;
+}
 
+.vehicle-card__specs li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
+.vehicle-card__specs li:before{
+    content: url("/assets/images/icons/check-mark-white.svg");
+    display: flex;
+    height: 16px;
+    width: 16px;
+}
 
+.vehicle-card__header{
+    gap: 24px;
+}
 
+.vehicle-card-badge__img{
+    height: 112px;
+    width: 112px;
+    margin-top: -50%;
+}
 
+.vehicle-card__footer{
+    gap: 48px;
+}
 
+.vehicle-card__badge{
+    width: 143px;
+    min-width: 143px;
+    height: 136px;
+    gap: 24px;
+    padding: 16px;
+}
 
+.vehicle-card__details{
+    padding-top: 8px;
+    gap: 20px;
+}
+
+.machine-details{
+    gap: 2px;
+}
+
+.vehicle-card__image{
+    aspect-ratio: 1.3;
+}
 
 
 

@@ -395,6 +395,46 @@
         flex-direction: column;
     }
 
+    .vehicle-card{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        height: 100%;
+    }
+
+    .vehicle-card__footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .vehicle-card__badge{
+        width: 100%;
+    }
+
+    .vehicle-card__info{
+        padding: 24px 20px 20px;
+        flex: 1;
+    }
+
+    .trainingPark__attention{
+        flex-direction: column;
+        padding: 16px;
+    }
+    .trainingPark__attention--content{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .vehicle-card__details{
+        gap: 12px;
+    }
+
+
+
+
+
+
 
 
 

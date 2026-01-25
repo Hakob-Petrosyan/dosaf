@@ -69,6 +69,10 @@ main {
     color: var(--Text-gray);
 }
 
+.colorLightGray{
+    color: var(--Background-light-gray);
+}
+
 .colorDarkGray {
     color: var(--Text-dark-gray);
 }
@@ -107,6 +111,13 @@ main {
 
 .bg__colorGreen{
     background-color: var(--color-green);
+}
+
+.bg__colorOrange{
+    background-color: var(--Text-orange);
+}
+.bg__darkGray{
+    background-color: var(--Text-dark-gray);
 }
 
 .textNowrap {
@@ -213,6 +224,11 @@ button {
     align-items: center;
 }
 
+.flexAlignEnd {
+    display: flex;
+    align-items: end;
+}
+
 .flexJustifyBetween {
     display: flex;
     justify-content: space-between;
@@ -223,6 +239,10 @@ button {
     justify-content: center;
 }
 
+.flexJustifyEnd{
+    display: flex;
+    justify-content: end;
+}
 
 
 .gap__4{
