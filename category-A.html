@@ -391,7 +391,7 @@ title = 'ДОСААФ'
         </div>
     </section>
 
-    <section class="program-plan__section page-section bg__lightGray2 borderRadius-12">
+    <section class="custom-container-2 page-section bg__lightGray2 borderRadius-12">
         <div class="width-container">
             <h2>Программа и план 2‑месячной подготовки</h2>
 
@@ -659,6 +659,8 @@ title = 'ДОСААФ'
         </div>
     </section>
 
+    <!--  Как проходит обучение  -->
+    {{> training}}
 
     {{> training-park
 
@@ -688,18 +690,277 @@ title = 'ДОСААФ'
     }}
 
 
-
-
-
-    <!--  Как проходит обучение  -->
-    {{> training}}
-
     <!--  Инструктора -->
     {{> instructors}}
 
-    <div class="width-container page-section">
-        10 ключевых упражнений
-    </div>
+
+    <!--Мы готовим к дорогам-->
+    <section class="width-container page-section">
+        <h2 class="approach__title">
+            <span class="colorOrange">Мы&nbsp;готовим к&nbsp;дорогам,</span>
+            а&nbsp;не&nbsp;только к&nbsp;экзамену
+        </h2>
+
+        <div class="approach__cards section-content grid-2 customScrollbarMobile">
+            <div class="approach__card borderRadius-12 customBorderLightGray2 flexAlignCenter">
+                <div class="approach-card__content flexColumn flexJustifyBetween">
+                    <div class="approach-card__tags flexBox gap__8">
+                        <span class="approach-card__tag bg__shadow gap__4 flexAlignCenter">
+                            <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.91371 0.446728C4.14473 -0.149314 4.98809 -0.149314 5.2191 0.446728L5.91977 2.25456C6.01909 2.51081 6.25917 2.68524 6.53357 2.70051L8.46944 2.80824C9.1077 2.84376 9.36831 3.64584 8.87283 4.04974L7.37 5.27477C7.15698 5.44841 7.06528 5.73064 7.13555 5.99633L7.63131 7.87074C7.79476 8.48874 7.11247 8.98445 6.57523 8.63803L4.94575 7.58731C4.71478 7.43837 4.41803 7.43837 4.18706 7.58731L2.55758 8.63803C2.02035 8.98445 1.33805 8.48874 1.50151 7.87074L1.99727 5.99633C2.06754 5.73064 1.97584 5.44841 1.76282 5.27477L0.259985 4.04974C-0.235498 3.64584 0.0251144 2.84376 0.663371 2.80824L2.59924 2.70051C2.87364 2.68524 3.11372 2.51081 3.21304 2.25456L3.91371 0.446728Z" fill="#204BB3"/>
+                            </svg>
+                            реальные ситуации
+                        </span>
+                        <span class="approach-card__tag bg__shadow gap__4 flexAlignCenter">
+                            <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.91371 0.446728C4.14473 -0.149314 4.98809 -0.149314 5.2191 0.446728L5.91977 2.25456C6.01909 2.51081 6.25917 2.68524 6.53357 2.70051L8.46944 2.80824C9.1077 2.84376 9.36831 3.64584 8.87283 4.04974L7.37 5.27477C7.15698 5.44841 7.06528 5.73064 7.13555 5.99633L7.63131 7.87074C7.79476 8.48874 7.11247 8.98445 6.57523 8.63803L4.94575 7.58731C4.71478 7.43837 4.41803 7.43837 4.18706 7.58731L2.55758 8.63803C2.02035 8.98445 1.33805 8.48874 1.50151 7.87074L1.99727 5.99633C2.06754 5.73064 1.97584 5.44841 1.76282 5.27477L0.259985 4.04974C-0.235498 3.64584 0.0251144 2.84376 0.663371 2.80824L2.59924 2.70051C2.87364 2.68524 3.11372 2.51081 3.21304 2.25456L3.91371 0.446728Z" fill="#204BB3"/>
+                            </svg>
+                            не только билеты
+                        </span>
+                    </div>
+
+                    <div class="approach-card__bottom flexColumn">
+                        <span class="text-s colorDarkGray">Мы — государственная организация</span>
+
+                        <p class="text-m">
+                            Имеем прямую связь с ГИБДД и регулярно
+                            получаем отчёты по аварийности новичков в первый
+                            год их вождения
+                        </p>
+                    </div>
+                </div>
+
+                <div class="approach-card__image img-container.">
+                    <img src="/assets/images/cards-images/approach-card-image-1.webp" alt="approach card imag">
+                </div>
+            </div>
+
+            <div class="approach__card borderRadius-12 customBorderLightGray2 flexAlignCenter">
+                <div class="approach-card__content flexColumn flexJustifyBetween">
+                    <div class="approach-card__tags flexBox gap__8 ">
+                        <span class="approach-card__tag bg__shadow gap__4 flexAlignCenter">
+                            <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.91371 0.446728C4.14473 -0.149314 4.98809 -0.149314 5.2191 0.446728L5.91977 2.25456C6.01909 2.51081 6.25917 2.68524 6.53357 2.70051L8.46944 2.80824C9.1077 2.84376 9.36831 3.64584 8.87283 4.04974L7.37 5.27477C7.15698 5.44841 7.06528 5.73064 7.13555 5.99633L7.63131 7.87074C7.79476 8.48874 7.11247 8.98445 6.57523 8.63803L4.94575 7.58731C4.71478 7.43837 4.41803 7.43837 4.18706 7.58731L2.55758 8.63803C2.02035 8.98445 1.33805 8.48874 1.50151 7.87074L1.99727 5.99633C2.06754 5.73064 1.97584 5.44841 1.76282 5.27477L0.259985 4.04974C-0.235498 3.64584 0.0251144 2.84376 0.663371 2.80824L2.59924 2.70051C2.87364 2.68524 3.11372 2.51081 3.21304 2.25456L3.91371 0.446728Z" fill="#204BB3"/>
+                            </svg>
+                           снижаем риски
+                        </span>
+                        <span class="approach-card__tag bg__shadow gap__4 flexAlignCenter">
+                            <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.91371 0.446728C4.14473 -0.149314 4.98809 -0.149314 5.2191 0.446728L5.91977 2.25456C6.01909 2.51081 6.25917 2.68524 6.53357 2.70051L8.46944 2.80824C9.1077 2.84376 9.36831 3.64584 8.87283 4.04974L7.37 5.27477C7.15698 5.44841 7.06528 5.73064 7.13555 5.99633L7.63131 7.87074C7.79476 8.48874 7.11247 8.98445 6.57523 8.63803L4.94575 7.58731C4.71478 7.43837 4.41803 7.43837 4.18706 7.58731L2.55758 8.63803C2.02035 8.98445 1.33805 8.48874 1.50151 7.87074L1.99727 5.99633C2.06754 5.73064 1.97584 5.44841 1.76282 5.27477L0.259985 4.04974C-0.235498 3.64584 0.0251144 2.84376 0.663371 2.80824L2.59924 2.70051C2.87364 2.68524 3.11372 2.51081 3.21304 2.25456L3.91371 0.446728Z" fill="#204BB3"/>
+                            </svg>
+                            нестандартные решения
+                        </span>
+                    </div>
+
+                    <div class="approach-card__bottom flexColumn">
+                        <span class="text-s colorDarkGray">Мы — государственная организация</span>
+
+                        <p class="text-m">
+                            Имеем прямую связь с ГИБДД и регулярно
+                            получаем отчёты по аварийности новичков в первый
+                            год их вождения
+                        </p>
+                    </div>
+                </div>
+
+                <div class="approach-card__image img-container.">
+                    <img src="/assets/images/cards-images/approach-card-image-2.webp" alt="approach card imag">
+                </div>
+            </div>
+        </div>
+
+        <div class="approach__footer flexCenter colorWhite borderRadius-12" style="background-image: url('/assets/images/banners/banners-dark-bg.webp')">
+            <div class="approach-footer__content flexAlignCenter w_100">
+                <p class="h4">
+                    Подготовим вас к реальной дороге
+                    и потенциальным опасностям на ней
+                </p>
+                <button class="approach__cta btn-custom redFillBtn borderRadius-12 w_FitContent_100 h5">
+                    Записаться
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section custom-container-2 bg__lightGray2 borderRadius-12">
+
+        <div class="width-container">
+
+            <div class="key-exercises__top flexAlignCenter">
+                <div class="key-exercises__title flexBox gap__12">
+                    <h2>10 ключевых упражнений</h2>
+                    <div class="tooltip-container positionRelative flexBox flexJustifyCenter flexAlignCenter cursorPointer">
+                        <span class="tooltip-icon flexBox">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M9.61523 0C10.3207 0 11.015 0.176839 11.6338 0.515625C12.1332 0.789071 12.569 1.16185 12.9189 1.60742C13.4846 1.53664 14.0601 1.58073 14.6104 1.74023C15.291 1.93754 15.911 2.30356 16.4121 2.80469C16.9132 3.30581 17.2793 3.9258 17.4766 4.60645C17.6359 5.15645 17.6791 5.73147 17.6084 6.29688C18.0543 6.6469 18.4266 7.08335 18.7002 7.58301C19.039 8.20175 19.2168 8.89614 19.2168 9.60156C19.2167 10.3068 19.0389 11.0005 18.7002 11.6191C18.4267 12.1186 18.0541 12.5543 17.6084 12.9043C17.6788 13.469 17.6356 14.0434 17.4766 14.5928C17.2798 15.2723 16.9147 15.8918 16.415 16.3926C15.9152 16.8934 15.2964 17.2598 14.6172 17.458C14.0683 17.6182 13.4944 17.6619 12.9297 17.5928C12.5796 18.0409 12.1435 18.4164 11.6426 18.6914C11.0229 19.0317 10.3271 19.2099 9.62012 19.21C8.91319 19.21 8.21736 19.0316 7.59766 18.6914C7.09687 18.4165 6.65957 18.0417 6.30957 17.5938C5.74551 17.6638 5.17171 17.6208 4.62305 17.4619C3.9436 17.2651 3.32496 16.9 2.82422 16.4004C2.32339 15.9006 1.95607 15.2827 1.75781 14.6035C1.59765 14.0548 1.554 13.4806 1.62305 12.916C1.17337 12.5662 0.796661 12.1295 0.520508 11.6279C0.178787 11.0072 6.5298e-05 10.3101 0 9.60156C0 8.89283 0.178683 8.19507 0.520508 7.57422C0.796775 7.07245 1.17313 6.63506 1.62305 6.28516C1.55421 5.72092 1.59776 5.14699 1.75781 4.59863C1.95608 3.91951 2.32344 3.30149 2.82422 2.80176C3.32495 2.30214 3.94363 1.93705 4.62305 1.74023C5.17198 1.58126 5.74622 1.53727 6.31055 1.60742C6.66052 1.16164 7.09713 0.78918 7.59668 0.515625C8.21539 0.176854 8.90985 1.64075e-05 9.61523 0ZM9.61426 12.6006C9.14107 12.6006 8.75781 12.9838 8.75781 13.457C8.75793 13.9301 9.14114 14.3135 9.61426 14.3135H9.62793C10.101 14.3135 10.4852 13.9301 10.4854 13.457C10.4854 12.9838 10.1011 12.6006 9.62793 12.6006H9.61426ZM9.61426 4.60059C9.14107 4.60059 8.75781 4.98384 8.75781 5.45703V10.6016C8.75819 11.0744 9.14131 11.457 9.61426 11.457C10.0871 11.4569 10.4703 11.0744 10.4707 10.6016V5.45703C10.4707 4.98392 10.0873 4.60071 9.61426 4.60059Z" fill="#F84C28"/>
+                        </svg>
+                        </span>
+
+
+                        <span class="tooltip-content positionAbsolute customBoxShadow borderRadius-12 bg__white text-m colorDarkGray">
+                        Упражнения сформированы по аварийности и ГИБДД
+                    </span>
+                    </div>
+                </div>
+
+                <div class="key-exercises__actions flexAlignCenter flexJustifyBetween w_100">
+                    <div class="key-exercises-top__buttons flexAlignCenter w_100">
+                        <button class="btn-custom redBtn borderRadius-12 w_FitContent_100">Что проверяет ГИБДД?</button>
+                        <button class="btn-custom redFillBtn borderRadius-12  w_FitContent_100">Записаться на пробный час</button>
+                    </div>
+
+                    <div class="slider-controls flexBox">
+                        <button id="toLeft_exercises__slider" class="slider-control-btn flexCenter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M11.4697 4.46973C11.7626 4.17683 12.2374 4.17683 12.5303 4.46973C12.8231 4.76263 12.8231 5.23741 12.5303 5.53027L6.81055 11.25H19C19.4142 11.25 19.75 11.5858 19.75 12C19.75 12.4142 19.4142 12.75 19 12.75H6.81055L12.5303 18.4697C12.8231 18.7626 12.8231 19.2374 12.5303 19.5303C12.2374 19.8231 11.7626 19.8231 11.4697 19.5303L4.46973 12.5303C4.43773 12.4983 4.40977 12.4636 4.38477 12.4277C4.35404 12.3836 4.32743 12.3364 4.30664 12.2861C4.2859 12.2358 4.27106 12.1837 4.26172 12.1309C4.25423 12.0883 4.25 12.0447 4.25 12C4.25 11.9547 4.25402 11.9103 4.26172 11.8672C4.27081 11.8164 4.28505 11.7662 4.30469 11.7178L4.30859 11.708C4.32018 11.6806 4.33596 11.6555 4.35059 11.6299C4.38303 11.573 4.42121 11.5182 4.46973 11.4697L11.4697 4.46973Z"
+                                      fill="#343434"/>
+                            </svg>
+                        </button>
+                        <button id="toRight_exercises__slider" class="slider-control-btn flexCenter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M7.21973 0.219727C7.51262 -0.0731667 7.98738 -0.0731667 8.28027 0.219727L15.2803 7.21973C15.3287 7.26813 15.366 7.32319 15.3984 7.37988C15.414 7.40703 15.4303 7.43375 15.4424 7.46289C15.4631 7.51289 15.4779 7.56459 15.4873 7.61719C15.495 7.66033 15.5 7.70464 15.5 7.75C15.5 7.79472 15.4948 7.83829 15.4873 7.88086C15.4779 7.9338 15.4632 7.9858 15.4424 8.03613C15.4215 8.08649 15.3951 8.1336 15.3643 8.17773C15.3393 8.21344 15.3121 8.2484 15.2803 8.28027L8.28027 15.2803C7.98741 15.5731 7.51262 15.5731 7.21973 15.2803C6.92684 14.9874 6.92686 14.5126 7.21973 14.2197L12.9395 8.5H0.75C0.335805 8.5 3.06649e-05 8.16419 0 7.75C0 7.33579 0.335786 7 0.75 7H12.9395L7.21973 1.28027C6.92684 0.98739 6.92686 0.512622 7.21973 0.219727Z"
+                                      fill="#343434"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="slider-block section-content overflowHidden borderRadius-16"
+                 id="exercises__slider"
+                 data-slider-group-item="exercises__slider"
+
+                 data-slides-view="2"
+                 data-slides-view-tablet="1.5"
+                 data-slides-view-mobile="1.06"
+
+                 data-space-between="20"
+                 data-space-between-tablet="10"
+                 data-space-between-mobile="8"
+
+                 data-pagination-mobile="progressbar"
+                 data-pagination-clickable="false"
+
+                 data-slides-loop="false"
+                 data-auto-play="false"
+                 data-slides-speed="1000"
+            >
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="exercises-card borderRadius-16 borderLightGray flexColumn bg__white">
+                            <div class="exercises-card__content">
+                                <div class="flexAlignCenter flexJustifyBetween">
+                                    <div class="exercises-card__image img-container">
+                                        <img class="borderRadius-8" src="/assets/images/cards-images/exercises-card-image-1.webp" alt="exercises image">
+                                    </div>
+                                    <div class="exercises-card__icon overflowHidden">
+                                        <img src="/assets/images/icons/exercises-card-icon.webp" alt="exercises icon">
+                                    </div>
+                                </div>
+                                <h3 class="exercises-card__title">Старт и точная остановка</h3>
+                                <div class="exercises-card__subtitle text-m colorGray">Стоп‑бокс, контроль торможения, ровная траектория.</div>
+                            </div>
+
+                            <ul class="exercises-card__list general-info-checklist-gray resetListStyle">
+                                <li>Снижает риск: пересечение стоп‑линии</li>
+                                <li>Экзамен: остановка</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="exercises-card borderRadius-16 borderLightGray flexColumn bg__white">
+                            <div class="exercises-card__content">
+                                <div class="flexAlignCenter flexJustifyBetween">
+                                    <div class="exercises-card__image img-container">
+                                        <img class="borderRadius-8" src="/assets/images/cards-images/exercises-card-image-2.webp" alt="exercises image">
+                                    </div>
+                                    <div class="exercises-card__icon overflowHidden">
+                                        <img src="/assets/images/icons/exercises-card-icon.webp" alt="exercises icon">
+                                    </div>
+                                </div>
+                                <h3 class="exercises-card__title">Старт и точная остановка</h3>
+                                <div class="exercises-card__subtitle text-m colorGray">Стоп‑бокс, контроль торможения, ровная траектория.</div>
+                            </div>
+
+                            <ul class="exercises-card__list general-info-checklist-gray resetListStyle">
+                                <li>Снижает риск: пересечение стоп‑линии</li>
+                                <li>Экзамен: остановка</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="exercises-card borderRadius-16 borderLightGray flexColumn bg__white">
+                            <div class="exercises-card__content">
+                                <div class="flexAlignCenter flexJustifyBetween">
+                                    <div class="exercises-card__image img-container">
+                                        <img class="borderRadius-8" src="/assets/images/cards-images/exercises-card-image-1.webp" alt="exercises image">
+                                    </div>
+                                    <div class="exercises-card__icon overflowHidden">
+                                        <img src="/assets/images/icons/exercises-card-icon.webp" alt="exercises icon">
+                                    </div>
+                                </div>
+                                <h3 class="exercises-card__title">Старт и точная остановка</h3>
+                                <div class="exercises-card__subtitle text-m colorGray">Стоп‑бокс, контроль торможения, ровная траектория.</div>
+                            </div>
+
+                            <ul class="exercises-card__list general-info-checklist-gray resetListStyle">
+                                <li>Снижает риск: пересечение стоп‑линии</li>
+                                <li>Экзамен: остановка</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="exercises-card borderRadius-16 borderLightGray flexColumn bg__white">
+                            <div class="exercises-card__content">
+                                <div class="flexAlignCenter flexJustifyBetween">
+                                    <div class="exercises-card__image img-container">
+                                        <img class="borderRadius-8" src="/assets/images/cards-images/exercises-card-image-2.webp" alt="exercises image">
+                                    </div>
+                                    <div class="exercises-card__icon overflowHidden">
+                                        <img src="/assets/images/icons/exercises-card-icon.webp" alt="exercises icon">
+                                    </div>
+                                </div>
+                                <h3 class="exercises-card__title">Старт и точная остановка</h3>
+                                <div class="exercises-card__subtitle text-m colorGray">Стоп‑бокс, контроль торможения, ровная траектория.</div>
+                            </div>
+
+                            <ul class="exercises-card__list general-info-checklist-gray resetListStyle">
+                                <li>Снижает риск: пересечение стоп‑линии</li>
+                                <li>Экзамен: остановка</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="swiper-pagination__exercises__slider" class="slider-pagination"></div>
+            </div>
+
+
+        </div>
+
+
+
+<!--        <section class="key-exercises">
+            <h2 class="key-exercises__title">10 ключевых упражнений</h2>
+
+
+            <div class="key-exercises__slider section-content swiper">
+
+
+
+                <div class="key-exercises__list swiper-wrapper">
+                    <div class="key-exercises__item swiper-slide">...</div>
+                    <div class="key-exercises__item swiper-slide">...</div>
+                </div>
+                <button class="key-exercises__nav-btn key-exercises__nav-btn&#45;&#45;prev"></button>
+                <button class="key-exercises__nav-btn key-exercises__nav-btn&#45;&#45;next"></button>
+            </div>
+        </section>-->
+
+    </section>
 
     <section class="page-section width-container">
         <h2>

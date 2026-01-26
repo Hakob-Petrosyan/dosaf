@@ -447,6 +447,15 @@ input[type="number"]:focus {
     transition: transform 300ms;
 }
 
+.custom-container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.custom-container-2{
+    padding: 40px 0 64px;
+}
+
 
 .mb-show {
     display: none;
@@ -506,5 +515,9 @@ input[type="number"]:focus {
 
     .page-section-top {
         margin-top: 40px;
+    }
+
+    .custom-container-2{
+        padding: 24px 0;
     }
 }
