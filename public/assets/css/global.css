@@ -456,6 +456,17 @@ input[type="number"]:focus {
     padding: 40px 0 64px;
 }
 
+.custom-container-2-slider{
+    padding: 40px 0 54px;
+}
+
+.custom-container-2-slider .slider-block{
+    padding-bottom: 10px;
+}
+
+.textCenter {
+    text-align: center;
+}
 
 .mb-show {
     display: none;
@@ -519,5 +530,9 @@ input[type="number"]:focus {
 
     .custom-container-2{
         padding: 24px 0;
+    }
+
+    .custom-container-2-slider{
+        padding: 24px 0 14px;
     }
 }

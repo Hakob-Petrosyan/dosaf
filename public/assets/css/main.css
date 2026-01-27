@@ -1840,7 +1840,7 @@ footer {
 
 .category-top__content{
     display: grid;
-    grid-template-columns: minmax(300px, 670px) minmax(300px, 436px);
+    grid-template-columns: minmax(300px, 676px) minmax(300px, 436px);
     justify-content: space-between;
     gap: 24px;
 }
@@ -1969,6 +1969,11 @@ footer {
 .tariffs-block{
     gap: 40px;
 }
+
+.tariffs-block .general-info-checklist{
+    gap: 8px;
+}
+
 .driver-license{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2199,6 +2204,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-image: url('/assets/images/banners/banners-dark-bg.webp');
 }
 .approach-footer__content{
     max-width: 520px;
@@ -2317,6 +2323,138 @@ footer {
 .exercises-card__list{
     margin-top: auto;
 }
+
+.exercises-card__bottom{
+    gap: 20px;
+}
+
+.exercises-card__info{
+    padding: 12px 16px;
+}
+
+.tariffs__B .tariffs-card{
+    max-width: 325px;
+    min-width: 325px;
+}
+
+.tariff-cards__icon{
+    padding-bottom: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 38px;
+    background-image: url('/assets/images/cards-images/tariff-image.webp');
+}
+
+.tariffs-card__aside{
+    min-height: 320px;
+}
+
+.categories-note{
+    gap: 40px;
+}
+.categories-note__item{
+    padding: 12px 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.categories-note__item:last-child{
+    max-width: 390px;
+}
+
+.categories-note__content{
+    display: flex;
+    gap: 20px;
+}
+
+.categories-note__type:after{
+    content: url("/assets/images/icons/check-mark-black-darck.svg");
+    height: 24px;
+    margin-top: -2px;
+}
+
+.categories-note__type{
+    border-right: 1px solid var(--Stroke-light-gray);
+    padding-right: 12px;
+}
+
+.categories-note__item--active .categories-note__type{
+    border-right: 1px solid var(--Text-gray);
+}
+
+.tariffs-block,
+.categories-note__top{
+    gap: 20px;
+}
+.tariffs{
+    gap: 12px;
+}
+
+.registration-documents{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.registration-documents__attention{
+    padding: 8px 8px 8px 20px;
+    gap: 40px;
+}
+
+
+.registration-documents__card{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 20px;
+}
+
+.training-category{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.training-category__card{
+    padding: 24px 32px;
+}
+
+.training-category__list{
+    gap: 16px;
+}
+
+.training-category__list b{
+    font-weight: 500;
+}
+
+.training-category__list li:not(:last-child){
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--Stroke-light-gray-2);
+}
+
+.state-blue-icon__list li{
+    display: flex;
+    gap: 12px;
+}
+.state-blue-icon__list li:before{
+    content: url("/assets/images/icons/state-blue-icon.svg");
+    display: flex;
+    height: 24px;
+    width: 24px;
+}
+
+.training-category__card--dark{
+    gap: 20px;
+}
+
+.training-category__card-top{
+    border-bottom: 1px solid var(--Stroke-light-gray-2);
+    padding-bottom: 12px;
+}
+
 
 
 /*END categories pages*/

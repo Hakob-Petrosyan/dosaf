@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+{{> head
+title = 'ДОСААФ'
+}}
+<body>
+
+
+{{> header}}
+
+
+<main>
+    <section class="category-top__section category-top__A width-container"
+             style="background-image: url('/assets/images/banners/category-top-b.webp')">
+        {{> breadcrumbs
+        currentCategory = 'Курсы'
+        currenPage = 'Права категории В'
+        }}
+
+        <div class="category-top__content">
+            <div class="flexColumn flexJustifyCenter">
+                <h1>
+                    Обучение на права
+                    <br>
+                    <span class="colorOrange">категории B</span>
+                </h1>
+
+                {{> advantages
+                    title1 = 'Сдаёте честно, без «квот» и завалов'
+                    title2 = 'Каждый 3-й водитель страны учился у нас'
+                    title3 = 'Автодром без трафика + экзамен на знакомой машине'
+                }}
+
+
+                {{> proposal
+                title='Учись где удобно'
+                subtitle='5 филиалов ДОСААФ на выбор'
+                src = '/assets/images/icons/icon-image-12.webp'
+                }}
+
+                <div class="top__mobile-banner mb-show"
+                     style="background-image: url('/assets/images/banners/category-top-b-mobile.webp')"></div>
+            </div>
+
+           {{> category-form}}
+        </div>
+    </section>
+
+    <section class="custom-container page-section bg__lightGray2">
+        <!--  Почему ДОСААФ  -->
+        {{> why-dosaaf}}
+
+        <div class="page-section width-container">
+            <div class="tariffs-block flexColumn flexAlignCenter">
+                <h2 class="textCenter">Стоимость и варианты обучения</h2>
+
+                <div class="tariffs tariffs__B flexJustifyCenter flexAlignEnd">
+                    <div class="tariffs-card tariffs-card__aside tariff-cards__icon borderLightGray borderRadius-12 bg__white flexColumn  customBoxShadow">
+                        <div class="flexColumn gap__8">
+                            <div class="h4">
+                                Индивидуальные
+                                <br>
+                                занятия
+                            </div>
+
+                            <p class="text-s colorGray">Для тех, кому нужно подтянуть навыки вождения (город/автодром).</p>
+                        </div>
+
+                        <div class="flexColumn gap__16">
+                            <div class="tariffs-price flexAlignStart gap__4">
+                                <span class="h3 textNoWrap">от 1 200 ₽</span>
+                                <span class="text-l textNoWrap colorDarkGray">/ час</span>
+                            </div>
+                            <button class="flexAlignCenter gap__8 btn-custom redBtn borderRadius-12">Оставить заявку</button>
+                        </div>
+                    </div>
+                    <div class="tariffs-card borderLightOrange borderRadius-12 bg__white flexColumn  customBoxShadow">
+                        <div class="flexColumn gap__8">
+                            <div class="h4">
+                                Полный курс
+                                <br>
+                                «Категория B»
+                            </div>
+
+                            <p class="text-s colorGray">Для тех, кому нужно подтянуть навыки вождения (город/автодром).</p>
+                        </div>
+
+                        <ul class="general-info-checklist resetListStyle flexColumn text-s colorDarkGray">
+                            <li>
+                                Без выдуманных «квот» и искусственных пересдач
+                            </li>
+                            <li>
+                                Бесплатные пересдачи внутреннего экзамена
+                            </li>
+                            <li>
+                                Занятия в удобное время — без доплат
+                            </li>
+                        </ul>
+
+                        <div class="flexColumn gap__16">
+                            <div class="tariffs-price flexAlignStart gap__4">
+                                <span class="h3 textNoWrap">от 28 000 ₽</span>
+                                <span class="text-l textNoWrap colorDarkGray">/ 2,5 мес</span>
+                            </div>
+
+                            <div class="flexColumn gap__12">
+                                <div class="flexColumn gap__8 marginTopAuto">
+                                    <button class="btn-custom redFillBtn borderRadius-12">Записаться</button>
+                                    <button class="flexAlignCenter gap__8 btn-custom redBtn borderRadius-12">
+                                        Вопросы по оплате
+                                    </button>
+                                </div>
+
+                                <p class="text-s colorGray">Итоговая цена зависит от выбранного графика, КПП и опций.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tariffs-card tariffs-card__aside borderLightGray borderRadius-12 bg__white flexColumn  customBoxShadow">
+                        <div class="flexColumn gap__8">
+                            <div class="h4">
+                                Рассрочка 0%
+                            </div>
+
+                            <p class="text-s colorGray">Разделите оплату на несколько частей без переплат*.</p>
+                        </div>
+
+                        <ul class="general-info-checklist resetListStyle flexColumn text-s colorDarkGray">
+                            <li>
+                                Быстрое оформление
+                            </li>
+                            <li>
+                                Без справок о доходах
+                            </li>
+                            <li>
+                                Досрочное погашение
+                            </li>
+                        </ul>
+
+
+
+                            <div class="flexColumn gap__12">
+                                <button class="flexAlignCenter gap__8 btn-custom redBtn borderRadius-12">
+                                        Узнать условия
+                                    </button>
+
+                                <p class="text-s colorGray">*Условия зависят от партнёра по рассрочке и могут меняться.</p>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section custom-container-2 bg__lightGray2 borderRadius-12">
+        <div class="width-container">
+            <div class="categories-note flexColumn">
+                <div class="categories-note__top flexBox">
+                    <h2 class="w_100">
+                        Категория «В» автоматически
+                        <span class="colorOrange">открывает другие подкатегории</span>
+                    </h2>
+
+                    <p class="h4 colorGray w_100">
+                        Вам станут доступны «В1 — трициклы и квадрициклы» и
+                        «М — мопеды». Научитесь управлять квадрициклами,
+                        квадроциклами и мопедами.
+                    </p>
+                </div>
+                <div class="categories-note__content">
+                    <div class="categories-note__item categories-note__item--active borderLightGray borderRadius-12 bg__white">
+                        <div class="flexAlignCenter gap__12 w_100">
+                            <div class="categories-note__type flexColumn h4">
+                                В
+                            </div>
+
+                            <div class="flexColumn">
+                                <span class="text-s colorGray">Научишься водить</span>
+                                <span class="h4">Легковой автомобиль</span>
+                            </div>
+                        </div>
+
+                        <button class="flexAlignCenter gap__8 btn-custom redBtn borderRadius-12 w_FitContent_100 h5">
+                            Начать учиться
+                        </button>
+                    </div>
+
+                    <div class="categories-note__item borderLightGray bg__lightGray2 colorGray gap__12">
+                        <div class="categories-note__type flexColumn h4">
+                            В1
+                        </div>
+
+                        <div class="flexColumn">
+                            <span class="text-s">Научишься водить</span>
+                            <span class="h4">Трицикл и квадрицикл</span>
+                        </div>
+                    </div>
+                    <div class="categories-note__item borderLightGray bg__lightGray2 colorGray gap__12">
+                        <div class="categories-note__type flexColumn h4">
+                            M
+                        </div>
+
+                        <div class="flexColumn">
+                            <span class="text-s">Научишься водить</span>
+                            <span class="h4">Мопеды</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--  Как проходит обучение  -->
+    {{> training}}
+
+    {{> training-park
+
+    title = 'Автопарк под ваш рост и задачи'
+
+    first-contentTitle = 'Chery Tiggo 7 Pro Max'
+    second-contentTitle = 'Лёгкий мото (A1)'
+
+    first-list = '
+    <li>Подушки безопасности</li>
+    <li>Системы стабилизации (ESP/ESC)</li>
+    <li>Удобные регулируемые сидения</li>
+    <li>Минимальные «слепые зоны»</li>
+    <li>Электроусилитель руля</li>
+    <li>Компактный кузов</li>'
+
+    second-list = '
+    <li>Низкое седло</li>
+    <li>ABS</li>
+    '
+
+    first-image = '/assets/images/cards-images/training-park-img-2.webp'
+    second-image = '/assets/images/cards-images/training-park-img-1.webp'
+
+    first-badgeImg = '/assets/images/cards-images/CTA-mini-card-image-2.webp'
+    second-badgeImg = '/assets/images/cards-images/CTA-mini-card-image-1.webp'
+    }}
+
+
+    <!--  Инструктора -->
+    {{> instructors}}
+
+    <!--Мы готовим к дорогам-->
+    {{> approach}}
+
+    <!--10 ключевых упражнений-->
+    {{> exercises
+
+    first-src = '/assets/images/cards-images/exercises-card-image-3.webp'
+    second-src = '/assets/images/cards-images/exercises-card-image-2.webp'
+
+    first-contentTitle = 'Старт на подъёме'
+    first-contentSubTitle = 'Без отката назад и злоупотребления газом — уверенный трог с места на уклоне.'
+
+    second-contentTitle = 'Контроль сцепления (МКПП)'
+    second-contentSubTitle = '.Точный «укус» сцепления для плавного трога и манёвров на низкой скорости.'
+
+    first-exercises-card-info = 'Сначала отработка на нашем автодроме вне трафика, затем перенос в город.'
+    second-exercises-card-info = 'Тренируем под метроном/сигналы инструктора — формируем ритм и мышечную память.'
+
+    list = 'true'
+    }}
+
+
+    <!-- У нас легче сдать  -->
+    {{> exam-advantages}}
+
+    <!--  Отзывы и результаты  -->
+    {{> reviews}}
+
+    <!--  Выберите категорию  -->
+    {{> controls-slider
+    title = "Другие категории прав"
+    }}
+
+    <!--  Ответы на вопросы  -->
+    <section class="width-container page-section flexCenter">
+        {{> faq}}
+    </section>
+
+    <!--  Филиалы  -->
+    {{> branches}}
+
+    <!--  Мы часть гос. структуры -->
+    {{> features}}
+
+    <!--  ДОСААФ — это школа  -->
+    {{> dos-school}}
+
+    <!--  Остались вопросы?  -->
+    {{> any-questions}}
+</main>
+
+{{> footer}}
+
+
+{{> fixed-bottom-menu}}
+
+{{> popUps}}
+
+{{> scripts}}
+
+
+</body>
+</html>

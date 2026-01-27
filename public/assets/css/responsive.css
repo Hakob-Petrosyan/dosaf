@@ -434,36 +434,6 @@
         gap: 12px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     .section-content {
         margin-top: 20px;
     }
@@ -1048,9 +1018,11 @@
 
     .category-top__section {
         background-image: none !important;
+        padding-bottom: 0;
     }
 
     .top__mobile-banner {
+        margin-top: -8px;
         height: 273px;
         background-position: center right;
         background-size: initial;
@@ -1061,6 +1033,7 @@
         flex-direction: column;
         align-items: start;
         gap: 12px;
+        z-index: 1;
     }
 
     .category-top-proposal__content {
@@ -1242,6 +1215,7 @@
     .approach__footer{
         margin-top: 24px;
         padding: 32px;
+        background-image: url('/assets/images/banners/banners-dark-bg-mobile.webp');
     }
 
     .approach__cards{
@@ -1265,7 +1239,7 @@
 
     .key-exercises-top__buttons{
         flex-direction: column;
-        gap: 12px;
+        gap: 8px;
     }
 
     .key-exercises__top{
@@ -1296,6 +1270,78 @@
         justify-content: space-between;
     }
 
+    .exercises-card__bottom{
+        gap: 16px;
+    }
+    .tariff-cards__icon{
+        background-size: 160px;
+    }
+
+    .categories-note__item--active,
+    .categories-note__content{
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .categories-note__item:last-child{
+        max-width: unset;
+    }
+
+    .categories-note__top{
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .categories-note{
+        gap: 20px;
+    }
+
+    .tariffs-block__title{
+        text-align: center;
+    }
+
+    .tariffs-card__aside{
+        min-height: 180px;
+    }
+
+    .registration-documents{
+        grid-template-columns: 100%;
+        gap: 12px;
+    }
+    .registration-documents__attention{
+        flex-direction: column;
+        gap: 20px;
+        padding: 16px;
+    }
+
+    .registration-documents__attention-content{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .registration-documents__card{
+        flex-direction: row;
+        align-items: center;
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .training-category{
+        grid-template-columns: 100%;
+        gap: 12px;
+    }
+
+    .training-category__card{
+        padding: 20px;
+    }
+
+    .training-category__list{
+        gap: 12px;
+    }
+
+    .training-category__list li:not(:last-child){
+        padding-bottom: 12px;
+    }
 
 
 
