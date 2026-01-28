@@ -270,6 +270,16 @@ function closeCurrentMenu(){
     })
 }
 
+function masonryGrid() {
+    const masonryElems = document.querySelectorAll('[data-masonry-grid]');
+    masonryElems.forEach(masonryElem => {
+        new Masonry(masonryElem, {
+            itemSelector: '[data-masonry-grid-item]',
+            percentPosition: true,
+            gutter: 24,
+        });
+    });
+}
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -284,6 +294,7 @@ document.addEventListener('DOMContentLoaded', function () {
     headerDropdown()
     mobileInnerMenus()
     closeCurrentMenu()
+    masonryGrid()
 })
 
 

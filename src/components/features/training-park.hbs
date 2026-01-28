@@ -63,7 +63,9 @@
                                     </ul>
                                 </div>
                                 <div class="vehicle-card__footer flexAlignEnd">
-                                    <div class="vehicle-card__details flexColumn customTopBorderLightGray2 w_100">
+                                    <div class="vehicle-card__details flexColumn {{#if transmission}}customTopBorderLightGray2{{/if}} w_100">
+
+                                        {{#if transmission}}
                                         <div class="machine-details flexColumn">
                                             <div class="flexAlignCenter flexJustifyBetween text-s colorLightGray">
                                                 <span>Коробка передач</span>
@@ -74,8 +76,9 @@
                                                 <span>2024</span>
                                             </div>
                                         </div>
+                                        {{/if}}
 
-                                        <p class="h5">
+                                        <p class="h5 colorLightGray">
                                             Садитесь за руль лёгкого мото (А1) и почувствуйте,
                                             как уверенность наполняет вас! Пора отправиться в путь
                                             и наслаждаться каждой поездкой!

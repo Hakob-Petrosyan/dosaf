@@ -411,6 +411,12 @@ input[type="number"]:focus {
     -moz-appearance: textfield;
 }
 
+textarea{
+    border: none;
+    outline: none;
+    resize: none;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: var(--Text-gray);
     opacity: 1; /* Firefox */
@@ -466,6 +472,12 @@ input[type="number"]:focus {
 
 .textCenter {
     text-align: center;
+}
+
+.grid-columns-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .mb-show {
@@ -534,5 +546,10 @@ input[type="number"]:focus {
 
     .custom-container-2-slider{
         padding: 24px 0 14px;
+    }
+
+    .grid-columns-2{
+        grid-template-columns: 100%;
+        gap: 12px;
     }
 }

@@ -668,7 +668,7 @@ header {
     padding: 16px;
     background-color: var(--color-white);
     border-radius: 8px;
-    /*min-height: 70px;*/
+    min-height: 70px;
     height: 100%;
 }
 
@@ -850,7 +850,6 @@ header {
 
 .map-wrapper{
     width: 100%;
-    max-width: 552px;
     height: 366px;
     overflow: hidden;
     border: 1px solid var(--Background-light-gray);
@@ -915,21 +914,6 @@ header {
     width: 24px;
     min-width: 24px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .advantages {
     display: inline-grid;
@@ -1828,7 +1812,6 @@ footer {
 /*categories pages*/
 .category-top__section{
     padding-top: 14px;
-    padding-bottom: 21px;
     background-repeat: no-repeat;
     background-position: right top;
     background-size: auto;
@@ -1840,7 +1823,7 @@ footer {
 
 .category-top__content{
     display: grid;
-    grid-template-columns: minmax(300px, 676px) minmax(300px, 436px);
+    grid-template-columns: minmax(300px, 670px) minmax(300px, 436px);
     justify-content: space-between;
     gap: 24px;
 }
@@ -1862,6 +1845,8 @@ footer {
 .category-form{
     padding: 32px 40px;
     gap: 24px;
+    height: fit-content;
+    margin-bottom: 21px;
 }
 
 .category-form__top{
@@ -2043,11 +2028,7 @@ footer {
     margin-top: 32px;
     gap: 20px;
 }
-.program-plan__top{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
+
 
 .program-plan-types{
     display: grid;
@@ -2385,7 +2366,7 @@ footer {
     border-right: 1px solid var(--Text-gray);
 }
 
-.tariffs-block,
+
 .categories-note__top{
     gap: 20px;
 }
@@ -2455,9 +2436,134 @@ footer {
     padding-bottom: 12px;
 }
 
+.category__subtitle{
+    margin-top: 16px;
+}
 
+.category__special-mark{
+    margin-top: 12px;
+}
+
+.course-info{
+    gap: 6px;
+}
+
+.course-info__item{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--Stroke-light-gray);
+}
+
+.course-info__label{
+    color: var(--Text-gray);
+}
+
+.training-program{
+    margin-top: 32px;
+    display: flex;
+    gap: 20px;
+}
+
+.training-program__list{
+    margin-bottom: -12px;
+}
+
+.training-program-list__item{
+    width: 48%;
+    margin-bottom: 12px;
+}
+
+
+.training-program__card{
+    padding: 24px;
+    gap: 24px;
+}
+
+.section-info{
+    margin-top: 20px;
+}
+
+.trainings-tractor-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    gap: 20px;
+}
+
+.exam-card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.knowledge-block{
+    margin-top: 32px;
+}
+
+.knowledge-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.gallery-item{
+    display: flex;
+    aspect-ratio: 1.675;
+}
+.gallery-item img{
+    border-radius: 12px;
+}
+
+.discounts-card{
+    padding: 24px;
+    gap: 12px;
+    min-height: 212px;
+}
+
+.discounts__attention{
+    margin-top: 24px;
+    padding: 12px 8px 12px 20px;
+}
+
+.discounts-list li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.discounts-list li:before{
+    content: url("/assets/images/icons/circle-check.webp");
+    display: flex;
+    height: 16px;
+    width: 16px;
+}
+
+.course_application_form{
+    padding: 32px 40px;
+    gap: 24px;
+}
+
+.course_application_form-comment{
+    padding: 8px 12px 8px 16px;
+    height: 73px;
+}
+
+.single-map-wrapper{
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid var(--Background-light-gray);
+    flex: 1;
+}
+.single-map-wrapper iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+    min-height: 361px;
+}
 
 /*END categories pages*/
+
 
 
 
