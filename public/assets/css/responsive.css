@@ -152,6 +152,9 @@
         gap: 20px;
     }
 
+    .reason-choose-us{
+        grid-template-columns: repeat(3, 1fr);
+    }
 
 }
 
@@ -1121,7 +1124,7 @@
     }
 
     .program-block__content{
-        grid-template-columns: 100%;
+        flex-direction: column;
         gap: 12px;
     }
     .program-card:not(:first-child){
@@ -1416,7 +1419,22 @@
         padding:24px 20px;
     }
 
+    .tariffs__D__content{
+        gap: 20px;
+    }
 
+    .reason-choose-us{
+        grid-template-columns: 100%;
+        gap: 12px;
+    }
+
+    .category-top__info{
+        margin-top: 24px;
+    }
+
+    .program-plan__info{
+        margin-top: 20px;
+    }
 
 
 

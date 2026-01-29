@@ -2001,14 +2001,14 @@ footer {
 }
 
 .program-block__content{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     gap: 56px;
 }
 
 .program-card{
     gap: 8px;
     position: relative;
+    width: 100%;
 }
 .program-card:not(:first-child){
     padding-left: 56px;
@@ -2038,7 +2038,6 @@ footer {
 .program-plan-type{
     padding: 24px;
     gap: 32px;
-    height: fit-content;
 }
 .program-plan__list{
     display: grid;
@@ -2441,10 +2440,6 @@ footer {
     margin-top: 16px;
 }
 
-.category__special-mark{
-    margin-top: 12px;
-}
-
 .course-info{
     gap: 6px;
 }
@@ -2561,6 +2556,34 @@ footer {
     height: 100%;
     border: none;
     min-height: 361px;
+}
+
+.tariffs__D .tariffs-card{
+    justify-content: space-between;
+    max-width: 325px;
+    min-width: 325px;
+}
+
+.tariffs__D__content{
+    gap: 24px;
+}
+
+.program-d-section{
+    gap: 20px;
+}
+
+.reason-choose-us{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.category-top__info{
+    margin-top: 12px;
+}
+
+.program-plan__info{
+    margin-top: 32px;
 }
 
 /*END categories pages*/
