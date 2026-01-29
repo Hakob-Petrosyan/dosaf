@@ -2252,7 +2252,7 @@ footer {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%, 16px);
+    transform: translate(-50%, 15px);
 }
 
 .key-exercises__actions{
@@ -2408,6 +2408,7 @@ footer {
 }
 
 .training-category__list b{
+    display: contents;
     font-weight: 500;
 }
 

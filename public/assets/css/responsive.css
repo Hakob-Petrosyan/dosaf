@@ -678,12 +678,16 @@
     }
 
     .slider-block {
-        padding-bottom: 17px;
+        padding-bottom: 20px;
         position: relative;
         width: calc(100% + 32px);
         margin-left: -16px;
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+    .custom-container-2-slider .slider-block{
+        padding-bottom: 20px;
     }
 
     .custom-container {
