@@ -480,6 +480,11 @@ textarea{
     gap: 20px;
 }
 
+
+svg path{
+    transition: fill 300ms;
+}
+
 .mb-show {
     display: none;
 }

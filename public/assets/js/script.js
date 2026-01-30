@@ -76,6 +76,13 @@ function openPopUp() {
             popupOverlay.classList.add('active');
             popupOverlay.focus();
 
+
+            const popupGetTitle = currentPopUp.querySelector('[data-popup-get-title]');
+
+            popupGetTitle.innerText = openBtn.dataset.popupSetTitle ? openBtn.dataset.popupSetTitle :  'Готовим водителей с 1951 года — и делаем это лучше всех';
+
+
+
             stopScrollBody()
         });
     })
@@ -281,6 +288,51 @@ function masonryGrid() {
     });
 }
 
+function initVideo() {
+    const videoWrappers = document.querySelectorAll('[data-video-wrapper]');
+
+    videoWrappers.forEach(wrapper => {
+        const video = wrapper.querySelector('[data-play-video]');
+        const playBtn = wrapper.querySelector('[data-play-icon]');
+
+        if (!video || !playBtn) return;
+
+        const showBtn = () => playBtn.classList.remove('hidden');
+        const hideBtn = () => playBtn.classList.add('hidden');
+
+        const pauseOthers = () => {
+            document.querySelectorAll('[data-play-video]').forEach(v => {
+                if (v !== video) {
+                    v.pause();
+                    v.controls = false;
+                }
+            });
+        };
+
+        playBtn.addEventListener('click', () => {
+            pauseOthers();
+            video.controls = true;
+            video.play();
+            hideBtn();
+        });
+
+        video.addEventListener('play', () => {
+            pauseOthers();
+            hideBtn();
+        });
+
+        video.addEventListener('pause', () => {
+            if (!video.ended) showBtn();
+        });
+
+        video.addEventListener('ended', () => {
+            video.controls = false;
+            video.currentTime = 0;
+            showBtn();
+        });
+    });
+}
+
 
 document.addEventListener('DOMContentLoaded', function () {
     openCloseBlock()
@@ -295,6 +347,7 @@ document.addEventListener('DOMContentLoaded', function () {
     mobileInnerMenus()
     closeCurrentMenu()
     masonryGrid()
+    initVideo()
 })
 
 
