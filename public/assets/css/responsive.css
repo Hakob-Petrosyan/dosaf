@@ -63,17 +63,11 @@
         background-color: var(--Background-light-gray-2);
     }
 
-/*    .header-dropdown-catalog__item a:hover,
-    .header-dropdown a:hover{
-        color: var(--Text-blue);
-    }*/
 
     .hoverLinkWrapper a:hover,
     .hoverLink:hover{
         color: var(--Text-blue);
     }
-
-
 
     .header-dropdown-catalog__item a:hover svg path,
     .header-dropdown a:hover svg path{
@@ -105,7 +99,6 @@
         background-color: var(--Text-orange);
         color:var(--color-white);
     }
-
 }
 
 
@@ -150,7 +143,6 @@
     .training-program__card{
         padding: 20px;
     }
-
 }
 
 
@@ -203,10 +195,6 @@
 
 
 @media (max-width: 992px) {
-
-/*    main {
-        padding-top: 57px;
-    }*/
 
     .breadcrumbs {
         margin: 12px 0 20px;
@@ -663,7 +651,6 @@
         margin-left: -16px;
         padding: 0 16px;
     }
-
 
     .reviews-card {
         flex-direction: column-reverse;
@@ -1471,11 +1458,6 @@
     .popup-result__content{
         gap: 8px;
     }
-
-
-
-
-
 
 }
 
