@@ -297,6 +297,8 @@ function initVideo() {
 
         if (!video || !playBtn) return;
 
+        video.removeAttribute('controls');
+
         const showBtn = () => playBtn.classList.remove('hidden');
         const hideBtn = () => playBtn.classList.add('hidden');
 
@@ -304,14 +306,14 @@ function initVideo() {
             document.querySelectorAll('[data-play-video]').forEach(v => {
                 if (v !== video) {
                     v.pause();
-                    v.controls = false;
+                    v.removeAttribute('controls');
                 }
             });
         };
 
         playBtn.addEventListener('click', () => {
             pauseOthers();
-            video.controls = true;
+            video.setAttribute('controls', 'controls');
             video.play();
             hideBtn();
         });
@@ -322,17 +324,20 @@ function initVideo() {
         });
 
         video.addEventListener('pause', () => {
-            if (!video.ended) showBtn();
+            if (!video.ended) {
+                video.removeAttribute('controls');
+                showBtn();
+            }
         });
 
         video.addEventListener('ended', () => {
-            video.controls = false;
+            video.pause();
             video.currentTime = 0;
+            video.removeAttribute('controls');
             showBtn();
         });
     });
 }
-
 
 document.addEventListener('DOMContentLoaded', function () {
     openCloseBlock()
@@ -455,16 +460,3 @@ document.addEventListener('focus', function (e) {
 }, true);
 
 
-
-
-/*
-function mobileAnchorClick() {
-    const headerNavList = document.querySelector('[data-header-nav-list]');
-    const anchors = headerNavList.querySelectorAll('li');
-    anchors.forEach(anchor => {
-        anchor.addEventListener('click', () => {
-            closeALlOpened()
-        })
-    })
-}
-mobileAnchorClick()*/
